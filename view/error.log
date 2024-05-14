@@ -1,0 +1,120 @@
+{"level":"error","message":"[Synthesise:getNewPathwaysRecursive] Error: tests","service":"user-service"}
+{"level":"error","message":"[Synthesise:getNewPathwaysRecursive] Error: tests","service":"user-service"}
+{"level":"error","message":"[Synthesise:getNewPathwaysRecursive] Error: tests","service":"user-service"}
+{"level":"error","message":"[Synthesise:getNewPathwaysRecursive] Error: tsting1","service":"user-service"}
+{"level":"error","message":"[Synthesise:getNewPathwaysRecursive] Error: tsting1","service":"user-service"}
+{"level":"error","message":"[Synthesise:getNewPathwaysRecursive] Error: tsting","service":"user-service"}
+{"level":"error","message":"[Synthesise:getNewPathwaysRecursive] Error: tsting","service":"user-service"}
+{"level":"error","message":"[Synthesise:getNewPathwaysRecursive] Error: tsting","service":"user-service"}
+{"level":"error","message":"[Synthesise:getNewPathwaysRecursive] ReferenceError: k is not defined","service":"user-service"}
+{"level":"error","message":"[Synthesise:getNewPathwaysRecursive] Error: tests","service":"user-service"}
+{"level":"error","message":"[Synthesise:getNewPathwaysRecursive] Error: tests","service":"user-service"}
+{"level":"error","message":"[Synthesise:getNewPathwaysRecursive] Error: tests","service":"user-service"}
+{"level":"error","message":"[Synthesise] TypeError: Cannot read property 'map' of undefined","service":"user-service"}
+{"level":"error","message":"[Synthesise] TypeError: Cannot read property 'map' of undefined","service":"user-service"}
+{"level":"error","message":"[Synthesise] Error: testing","service":"user-service"}
+{"level":"error","message":"\u001b[41m[Prototypes:checkBonds] Error: Carbocation found that is bonded to an atom with a positive charge MoleculeFactory\u001b[49m","service":"user-service"}
+{"level":"error","message":"\u001b[41m[Prototypes:checkBonds] Error: Carbocation found that is bonded to an atom with a positive charge MoleculeFactory\u001b[49m","service":"user-service"}
+{"level":"error","message":"\u001b[31m[Dehydrate] ReferenceError: Cannot access 'carbon_bonds_to_positive_atoms' before initialization\u001b[39m","service":"user-service"}
+{"level":"error","message":"\u001b[31m[Dehydrate] ReferenceError: Cannot access 'carbon_bonds_to_positive_atoms' before initialization\u001b[39m","service":"user-service"}
+{"level":"error","message":"[Synthesise] Error: testing","service":"user-service"}
+{"level":"error","message":"\u001b[41m[Prototypes:checkBonds] Error: Found atom with no bonds ExtractAtomGroup\u001b[49m","service":"user-service"}
+{"level":"error","message":"\u001b[41m[Prototypes:checkBonds] Error: Found atom with no bonds ExtractAtomGroup\u001b[49m","service":"user-service"}
+{"level":"error","message":"\u001b[41m[Hydrate] TypeError: atom.atom is not a function\u001b[49m","service":"user-service"}
+{"level":"error","message":"[Synthesise] Error: testing","service":"user-service"}
+{"level":"error","message":"[Synthesise] Error: testing","service":"user-service"}
+{"level":"error","message":"[Synthesise] Error: testing","service":"user-service"}
+{"level":"error","message":"[Synthesise] Error: testing","service":"user-service"}
+{"level":"error","message":"[Synthesise] Error: testing","service":"user-service"}
+{"level":"error","message":"\u001b[41m[Prototypes:checkBonds] Error: Carbocation found that is bonded to an atom with a positive charge MoleculeFactory\u001b[49m","service":"user-service"}
+{"level":"error","message":"\u001b[41m[Prototypes:checkBonds] Error: Carbocation found that is bonded to an atom with a positive charge MoleculeFactory\u001b[49m","service":"user-service"}
+{"level":"error","message":"\u001b[41m[Prototypes:checkBonds] Error: Carbocation found that is bonded to an atom with a positive charge MoleculeFactory\u001b[49m","service":"user-service"}
+{"level":"error","message":"[Synthesise] Error: testing","service":"user-service"}
+{"level":"error","message":"[Synthesise] Error: testing","service":"user-service"}
+{"level":"error","message":"[Synthesise] Error: testing","service":"user-service"}
+{"level":"error","message":"[Synthesise] Error: testing","service":"user-service"}
+{"level":"error","message":"[Synthesise] Error: testing","service":"user-service"}
+{"level":"error","message":"[Synthesise] Error: testing","service":"user-service"}
+{"level":"error","message":"[Synthesise] Error: testing","service":"user-service"}
+{"level":"error","message":"[Synthesise] Error: testing","service":"user-service"}
+{"level":"error","message":"[Synthesise] Error: testing","service":"user-service"}
+{"level":"error","message":"[Synthesise] Error: testing","service":"user-service"}
+{"level":"error","message":"[Synthesise] Error: testing","service":"user-service"}
+{"level":"error","message":"[Synthesise] Error: testing","service":"user-service"}
+{"level":"error","message":"[Synthesise] Error: testing","service":"user-service"}
+{"level":"error","message":"\u001b[31m[Dehydrate] Error: Carbon atom should be a carbocation after removing OH2 group. [C]\u001b[39m","service":"user-service"}
+{"level":"error","message":"\u001b[31m[Dehydrate] Error: Carbon atom should be a carbocation after removing OH2 group. [C]\u001b[39m","service":"user-service"}
+{"level":"error","message":"\u001b[31m[Dehydrate] Error: Carbon atom should be a carbocation after removing OH2 group. [C]\u001b[39m","service":"user-service"}
+{"level":"error","message":"\u001b[31m[Dehydrate] Error: Carbon atom should be a carbocation after removing OH2 group. [C]\u001b[39m","service":"user-service"}
+{"level":"error","message":"[Synthesise:getNewPathwaysRecursive] TypeError: computed_previous_container_state.substrate.checkBonds is not a function","service":"user-service"}
+{"level":"error","message":"\u001b[31m[Dehydrate] Error: Carbon atom should be a carbocation after removing OH2 group. [C]\u001b[39m","service":"user-service"}
+{"level":"error","message":"\u001b[31m[Dehydrate] Error: Carbon atom should be a carbocation after removing OH2 group. [C]\u001b[39m","service":"user-service"}
+{"level":"error","message":"\u001b[31m[Dehydrate] Error: Carbon atom should be a carbocation after removing OH2 group. [C]\u001b[39m","service":"user-service"}
+{"level":"error","message":"\u001b[31m[Dehydrate] Error: Carbon atom should be a carbocation after removing OH2 group. [C]\u001b[39m","service":"user-service"}
+{"level":"error","message":"[Synthesise:getNewPathwaysRecursive] TypeError: Cannot read property 'name' of undefined","service":"user-service"}
+{"level":"error","message":"\u001b[41m[HydrateReverse] ReferenceError: Cannot access 'computed_previous_container' before initialization\u001b[49m","service":"user-service"}
+{"level":"error","message":"\u001b[41m[Prototypes:checkBonds] Error: Found carbon with less than three bonds.\u001b[49m","service":"user-service"}
+{"level":"error","message":"\u001b[41m[ReduceReverse] TypeError: Cannot read property 'bonds' of undefined\u001b[49m","service":"user-service"}
+{"level":"error","message":"\u001b[41m[Prototypes:checkBonds] Error: Found carbon with less than three bonds.\u001b[49m","service":"user-service"}
+{"level":"error","message":"\u001b[41m[Prototypes:checkBonds] Error: Found carbon with less than three bonds.\u001b[49m","service":"user-service"}
+{"level":"error","message":"\u001b[41m[Prototypes:checkBonds] Error: Found carbon with less than three bonds.\u001b[49m","service":"user-service"}
+{"level":"error","message":"\u001b[41m[Prototypes:checkBonds] Error: Found carbon with less than three bonds.\u001b[49m","service":"user-service"}
+{"level":"error","message":"\u001b[41m[Prototypes:checkBonds] TypeError: Cannot read property 'charge' of undefined\u001b[49m","service":"user-service"}
+{"level":"error","message":"\u001b[41m[Prototypes:checkBonds] TypeError: Cannot read property 'charge' of undefined\u001b[49m","service":"user-service"}
+{"level":"error","message":"\u001b[41m[Prototypes:checkBonds] TypeError: Cannot read property 'charge' of undefined\u001b[49m","service":"user-service"}
+{"level":"error","message":"\u001b[41m[Prototypes:checkBonds] TypeError: Cannot read property 'charge' of undefined\u001b[49m","service":"user-service"}
+{"level":"error","message":"\u001b[31m[Dehydrate] Error: Carbon atom should be a carbocation after removing OH2 group. [C][O-]\u001b[39m","service":"user-service"}
+{"level":"error","message":"\u001b[41m[ReduceReverse] ReferenceError: Cannot access 'computed_previous_container' before initialization\u001b[49m","service":"user-service"}
+{"level":"error","message":"\u001b[41m[Prototypes:checkBonds] Error: Found carbon with less than three bonds.\u001b[49m","service":"user-service"}
+{"level":"error","message":"\u001b[41m[Prototypes:checkBonds] Error: Found carbon with less than three bonds.\u001b[49m","service":"user-service"}
+{"level":"error","message":"\u001b[41m[ReduceReverse] ReferenceError: atom is not defined\u001b[49m","service":"user-service"}
+{"level":"error","message":"\u001b[41m[Prototypes:checkBonds] Error: Found carbon with less than three bonds.\u001b[49m","service":"user-service"}
+{"level":"error","message":"\u001b[41m[Prototypes:checkBonds] Error: Found carbon with less than three bonds.\u001b[49m","service":"user-service"}
+{"level":"error","message":"\u001b[41m[Prototypes:checkBonds] Error: Found carbon with less than three bonds.\u001b[49m","service":"user-service"}
+{"level":"error","message":"\u001b[41m[Prototypes:checkBonds] Error: Found carbon with less than three bonds.\u001b[49m","service":"user-service"}
+{"level":"error","message":"\u001b[41m[Prototypes:checkBonds] Error: Found carbon with less than three bonds.\u001b[49m","service":"user-service"}
+{"level":"error","message":"\u001b[41m[ReduceReverse] TypeError: computed_previous_container.substrate.atoms.getAtomByAtomId is not a function\u001b[49m","service":"user-service"}
+{"level":"error","message":"\u001b[41m[ReduceReverse] TypeError: Cannot read property 'substr' of undefined\u001b[49m","service":"user-service"}
+{"level":"error","message":"\u001b[41m[ReduceReverse] TypeError: Cannot read property 'getAtomByAtomId' of undefined\u001b[49m","service":"user-service"}
+{"level":"error","message":"\u001b[41m[ReduceReverse] TypeError: Cannot read property 'getAtomByAtomId' of undefined\u001b[49m","service":"user-service"}
+{"level":"error","message":"\u001b[41m[ReduceReverse] TypeError: Cannot read property 'getAtomByAtomId' of undefined\u001b[49m","service":"user-service"}
+{"level":"error","message":"\u001b[31m[Dehydrate] Error: Carbon atom should be a carbocation after removing OH2 group. [C][O-]\u001b[39m","service":"user-service"}
+{"level":"error","message":"\u001b[31m[Dehydrate] Error: Carbon atom should be a carbocation after removing OH2 group. [C][O-]\u001b[39m","service":"user-service"}
+{"level":"error","message":"\u001b[41m[Prototypes:checkBonds] Error: Found carbon with less than three bonds.\u001b[49m","service":"user-service"}
+{"level":"error","message":"[Synthesise] Error: testing","service":"user-service"}
+{"level":"error","message":"[Synthesise] Error: testing","service":"user-service"}
+{"level":"error","message":"[Synthesise] Error: testing","service":"user-service"}
+{"level":"error","message":"\u001b[41m[Prototypes:checkBonds] Error: Found carbon with lone pairs\u001b[49m","service":"user-service"}
+{"level":"error","message":"\u001b[41m[Prototypes:checkBonds] Error: Found carbon with lone pairs\u001b[49m","service":"user-service"}
+{"level":"error","message":"\u001b[41m[Prototypes:checkBonds] Error: Found carbon with lone pairs\u001b[49m","service":"user-service"}
+{"level":"error","message":"\u001b[41m[Prototypes:checkBonds] Error: Found carbon with lone pairs\u001b[49m","service":"user-service"}
+{"level":"error","message":"\u001b[41m[Prototypes:checkBonds] Error: Found atom with no bonds RemoveAtom\u001b[49m","service":"user-service"}
+{"level":"error","message":"\u001b[41m[Prototypes:checkBonds] Error: Found atom with no bonds RemoveAtom\u001b[49m","service":"user-service"}
+{"level":"error","message":"\u001b[41m[Prototypes:checkBonds] Error: Found carbon with lone pairs\u001b[49m","service":"user-service"}
+{"level":"error","message":"\u001b[41m[ReduceReverse] TypeError: computed_previous_container.substrate.atoms.getAtomByAtomId is not a function\u001b[49m","service":"user-service"}
+{"level":"error","message":"\u001b[41m[Prototypes:checkBonds] Error: Found carbon with lone pairs\u001b[49m","service":"user-service"}
+{"level":"error","message":"\u001b[41m[Prototypes:checkBonds] Error: Found carbon with lone pairs\u001b[49m","service":"user-service"}
+{"level":"error","message":"\u001b[41m[Prototypes:checkBonds] Error: Found carbon with lone pairs\u001b[49m","service":"user-service"}
+{"level":"error","message":"\u001b[41m[Prototypes:checkBonds] Error: Found carbon with lone pairs\u001b[49m","service":"user-service"}
+{"level":"error","message":"\u001b[41m[Prototypes:checkBonds] Error: Found carbon with lone pairs\u001b[49m","service":"user-service"}
+{"level":"error","message":"\u001b[41m[Prototypes:checkBonds] Error: Found carbon with lone pairs\u001b[49m","service":"user-service"}
+{"level":"error","message":"\u001b[41m[Prototypes:checkBonds] Error: Found carbon with lone pairs\u001b[49m","service":"user-service"}
+{"level":"error","message":"\u001b[41m[Prototypes:checkBonds] Error: Found carbon with lone pairs\u001b[49m","service":"user-service"}
+{"level":"error","message":"\u001b[41m[Prototypes:checkBonds] Error: Found carbon with lone pairs\u001b[49m","service":"user-service"}
+{"level":"error","message":"\u001b[41m[Prototypes:checkBonds] Error: Found carbon with lone pairs\u001b[49m","service":"user-service"}
+{"level":"error","message":"\u001b[41m[Prototypes:checkBonds] Error: Found carbon with lone pairs\u001b[49m","service":"user-service"}
+{"level":"error","message":"\u001b[41m[Prototypes:checkBonds] Error: Found carbon with lone pairs\u001b[49m","service":"user-service"}
+{"level":"error","message":"\u001b[41m[Prototypes:checkBonds] Error: Found carbon with lone pairs\u001b[49m","service":"user-service"}
+{"level":"error","message":"\u001b[41m[Prototypes:checkBonds] Error: Found carbon with lone pairs\u001b[49m","service":"user-service"}
+{"level":"error","message":"\u001b[41m[Prototypes:checkBonds] Error: Found carbon with less than three bonds or more than four bonds.\u001b[49m","service":"user-service"}
+{"level":"error","message":"\u001b[41m[Prototypes:checkBonds] Error: Found carbon with less than three bonds or more than four bonds.\u001b[49m","service":"user-service"}
+{"level":"error","message":"\u001b[41m[Prototypes:checkBonds] Error: Found carbon with lone pairs\u001b[49m","service":"user-service"}
+{"level":"error","message":"[Synthesise] Error: testing","service":"user-service"}
+{"level":"error","message":"[Synthesise] Error: testing","service":"user-service"}
+{"level":"error","message":"[Synthesise] Error: testing","service":"user-service"}
+{"level":"error","message":"[Synthesise] ReferenceError: LookupMolecule is not defined","service":"user-service"}
+{"level":"error","message":"\u001b[41m[Prototypes:checkBonds] Error: Found carbon with less than three bonds or more than four bonds.\u001b[49m","service":"user-service"}
+{"level":"error","message":"[Synthesise] ReferenceError: Pathways is not defined","service":"user-service"}
+{"level":"error","message":"[Synthesise] ReferenceError: _ is not defined","service":"user-service"}
+{"level":"error","message":"[Synthesise] TypeError: Cannot read property 'canonicalSMILES' of undefined","service":"user-service"}
+{"level":"error","message":"[Synthesise] ReferenceError: Pathways is not defined","service":"user-service"}

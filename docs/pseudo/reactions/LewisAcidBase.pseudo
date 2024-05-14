@@ -1,0 +1,27 @@
+
+FUNCTION LewisAcidBase (molecule:object, logger: object)
+
+IF reactants ARE BOTH generic
+   RETURN false
+ENDIF
+
+base reagent = FIND Lewis base molecule
+acid reagent = FIND Lewis acid molecule
+base substrate = FIND Lewis base molecule
+acid substrate = FIND Lewis acid molecule
+
+GET base molecule AS EITHER base substrate OR base reagent
+GET acid molecule AS EITHER acid substrate OR acid reagent
+GET base molecule atom AS EITHER base substrate atom OR base reagent atom
+GET acid molecule atom AS EITHER acid substrate atom OR acid reagent atom
+
+combined molecule = BOND base molecule to acid molecule
+
+SUBTRACT 1 unit of base molecule FROM container
+SUBTRACT 1 unit of acid molecule FROM container
+ADD combined molecule to container
+
+RETURN true
+
+END FUNCTION
+

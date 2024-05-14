@@ -1,0 +1,15 @@
+FUNCTION BronstedLoweryAcidBase(baseMolecule: object, acidMoleuce: object, logger: object)
+
+# Ensure that this function only returns true or false without modifying the parameters.
+
+GET conjugate acid of base molecule
+GET conjugate base of acid molecule
+
+IF conjugate acid of base molecule is FALSE OR conjugate base of acid molecule is FALSE
+   RETURN false
+END IF
+
+
+
+
+

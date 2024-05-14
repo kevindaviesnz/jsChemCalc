@@ -1,0 +1,26 @@
+[{
+  "_id": {
+    "$oid": "63928b84888456387285a486"
+  },
+  "reaction": "lewis acid base",
+  "target_smiles": "CC=NC",
+  "expected_starting_substrate_smiles": "CC=O",
+  "expected_starting_reagent_smiles": "NC",
+  "max_number_of_steps": 7
+},{
+  "_id": {
+    "$oid": "63928b84888456387285a487"
+  },
+  "reaction": "pinacol rearrangement",
+  "target_smiles": "CC(C)(C)C(=[O])C",
+  "expected_starting_substrate_smiles": "CC(C(C)(C)O)(O)C",
+  "max_number_of_steps": 5
+},{
+  "_id": {
+    "$oid": "6392b2a4888456387285a488"
+  },
+  "reaction": "reductive amination",
+  "target_smiles": "CCCNC",
+  "expected_starting_substrate_smiles": "CCCN=C",
+  "max_number_of_steps": 2
+}]

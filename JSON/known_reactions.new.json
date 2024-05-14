@@ -1,0 +1,79 @@
+[{
+  "_id": {
+    "$oid": "63ffa8babda29f2271f4d7a4"
+  },
+  "reaction_name": "ozonoylis",
+  "starting_product": [
+    "alkene"
+  ],
+  "end product": "ketone",
+  "urls": [],
+  "steps": [
+    {
+      "index": 0,
+      "side_products": [
+        "O=C(C)"
+      ],
+      "function": "ToKetone",
+      "mechanism": "ozonolysis",
+      "precursor_substrate_SMILES": "CC(C)=C(C)",
+      "chemical_substrate_SMILES": "CC(C)=O",
+      "starting_reagents": [
+        "[O3]",
+        "CSC"
+      ],
+      "end_reagents": [],
+      "description": "Substrate is split into two ketones."
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "6405024d57fdb7187f83c831"
+  },
+  "reaction_name": "bromination",
+  "starting_product": [
+    "alkene"
+  ],
+  "end product": "diromide",
+  "urls": [],
+  "steps": [
+    {
+      "index": 0,
+      "function": "ToDibromide",
+      "mechanism": "bromination",
+      "precursor_substrate_SMILES": "ccc",
+      "chemical_substrate_SMILES": "CC(C)(Br)C(Br)(C)C",
+      "starting_reagents": [
+        "[Br][Br]"
+      ],
+      "end_reagents": [],
+      "description": "Alkene is brominated to give a dibromide."
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "640650e3db6b682cf4e19bea"
+  },
+  "reaction_name": "dihydroxylation",
+  "starting_product": [
+    "alkene"
+  ],
+  "end product": "glycol",
+  "urls": [
+    "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Map%3A_Organic_Chemistry_(Smith)/12%3A_Oxidation_and_Reduction/12.09%3A_Dihydroxylation"
+  ],
+  "steps": [
+    {
+      "index": 0,
+      "function": "ToGlycol",
+      "mechanism": "dihydroxylation",
+      "precursor_substrate_SMILES": "CC1(C)(O[Os](=O)(=O)OC1C)C",
+      "chemical_substrate_SMILES": "CC(O)(C)C(O)(C)(C)",
+      "starting_reagents": [
+        "O"
+      ],
+      "end_reagents": [],
+      "description": "Osmate ester is reduced to give a syn diol (glycol)."
+    }
+  ]
+}]

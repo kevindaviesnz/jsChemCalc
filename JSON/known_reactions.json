@@ -1,0 +1,785 @@
+[
+  {
+    "_id": {
+      "$oid": "63ffa8babda29f2271f4d7a4"
+    },
+    "reaction_name": "ozonoylis",
+    "starting_product": [
+      "alkene"
+    ],
+    "end product": "ketone",
+    "urls": ["https://byjus.com/chemistry/ozonolysis-of-alkenes-alkynes-mechanism/"],
+    "steps": [
+      {
+        "index": 0,
+        "side_products": [
+          "O=C(C)"
+        ],
+        "function": "ToKetone",
+        "mechanism": "ozonolysis",
+        "precursor_substrate_SMILES": "CC(C)=C(C)",
+        "chemical_substrate_SMILES": "CC(C)=O",
+        "starting_reagents": [
+        ],
+        "end_reagents": [],
+        "description": "Each alkene is converted into a ketone."
+      }
+
+    ]
+  },{
+    "_id": {
+      "$oid": "6405024d57fdb7187f83c831"
+    },
+    "reaction_name": "bromination",
+    "starting_product": [
+      "alkene"
+    ],
+    "end product": "diromide",
+    "urls": [],
+    "steps": [
+      {
+        "index": 0,
+        "function": "ToDibromide",
+        "mechanism": "bromination",
+        "precursor_substrate_SMILES": "ccc",
+        "chemical_substrate_SMILES": "CC(C)(Br)C(Br)(C)C",
+        "starting_reagents": [
+          "[Br][Br]"
+        ],
+        "end_reagents": [],
+        "description": "Alkene is brominated to give a dibromide."
+      }
+    ]
+  },{
+    "_id": {
+      "$oid": "640650e3db6b682cf4e19bea"
+    },
+    "reaction_name": "dihydroxylation",
+    "starting_product": [
+      "alkene"
+    ],
+    "end product": "glycol",
+    "urls": [
+      "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Map%3A_Organic_Chemistry_(Smith)/12%3A_Oxidation_and_Reduction/12.09%3A_Dihydroxylation"
+    ],
+    "steps": [
+      {
+        "index": 0,
+        "function": "ToGlycol",
+        "mechanism": "dihydroxylation",
+        "precursor_substrate_SMILES": "CC1(C)(O[Os](=O)(=O)OC1C)C",
+        "chemical_substrate_SMILES": "CC(O)(C)C(O)(C)(C)",
+        "starting_reagents": [
+          "O"
+        ],
+        "end_reagents": [],
+        "description": "Osmate ester is reduced to give a syn diol (glycol)."
+      }
+    ]
+  },
+  {
+  "_id": {
+    "$oid": "62e9f92eae26ee213002bd4d"
+  },
+  "reaction_name": "reductive amination",
+  "urls": [
+    "https://www.masterorganicchemistry.com/2017/09/01/reductive-amination/"
+  ],
+  "steps": [
+    {
+      "index": 0,
+      "description": "Protonate carbonyl oxygen using sulphuric acid",
+      "mechanism": "protonation",
+      "precursor_substrate_SMILES": "C=O",
+      "chemical_substrate_SMILES": "C=[O+]",
+      "starting_reagents": [
+        "OS(=O)(=O)O"
+      ],
+      "end_reagents": [
+        [
+          "O[S](=O)(=O)[O-]"
+        ]
+      ]
+    },
+    {
+      "index": 1,
+      "description": "Bond nitrogen to carbon, breaking C=O bond.",
+      "mechanism": "lewis acid base",
+      "precursor_substrate_SMILES": "C=[O+]",
+      "chemical_substrate_SMILES": "C(O)[N+]CCC",
+      "starting_reagents": [
+        "NCCC"
+      ],
+      "end_reagents": [
+        [
+          "O[S](=O)(=O)[O-]"
+        ],
+        [
+          "O[S](=O)(=O)[O-]"
+        ]
+      ],
+      "reagents_filter": "*"
+    },
+    {
+      "index": 2,
+      "description": "Protonate carbonyl oxygen to form O leaving group.",
+      "mechanism": "bronsted lowery acid base",
+      "precursor_substrate_SMILES": "C(O)[N+]CCC",
+      "chemical_substrate_SMILES": "C([O+])[N+]CCC",
+      "starting_reagents": [
+        "[O+]"
+      ],
+      "end_reagents": [
+        [],
+        [],
+        [
+          "O[S](=O)(=O)[O-]",
+          "O"
+        ]
+      ]
+    },
+    {
+      "index": 3,
+      "description": "Deprotonate nitrogen atom. Nitrogen atom should now have one hydrogen and have neutral charge.",
+      "mechanism": "bronsted lowery acid base",
+      "precursor_substrate_SMILES": "C([O+])[N+]CCC",
+      "chemical_substrate_SMILES": "C([O+])NCCC",
+      "starting_reagents": [],
+      "end_reagents": [
+        [],
+        [
+          "NCC1=CC=CC=C1",
+          "NCC1=CC=CC=C1"
+        ],
+        [],
+        [
+          "O[S](=O)(=O)[O-]",
+          "[O+]"
+        ]
+      ]
+    },
+    {
+      "index": 4,
+      "mechanism": "bond",
+      "description": "Create C=N double bond",
+      "precursor_substrate_SMILES": "C([O+])NCCC",
+      "chemical_substrate_SMILES": "C=[N+]CCC",
+      "starting_reagents": [],
+      "end_reagents": [
+        [],
+        [
+          "NCC1=CC=CC=C1",
+          "NCC1=CC=CC=C1"
+        ],
+        [],
+        [],
+        [
+          "O[S](=O)(=O)[O-]",
+          "[O+]",
+          "O"
+        ]
+      ]
+    },
+    {
+      "index": 5,
+      "mechanism": "reduction",
+      "precursor_substrate_SMILES": "C(=[N+]CCC)",
+      "chemical_substrate_SMILES": "CNCCC",
+      "end_reagents": [
+        [],
+        [
+          "NCC1=CC=CC=C1"
+        ],
+        [],
+        [
+          "O"
+        ],
+        [],
+        [
+          "O[S](=O)(=O)[O-]",
+          "[O+]",
+          "O",
+          "RA:"
+        ]
+      ],
+      "starting_reagents": [
+        "RA:"
+      ]
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "624926dbf5d7cc3020505f39"
+  },
+  "reaction_name": "pinacol rearrangement",
+  "steps": [
+    {
+      "index": 0,
+      "mechanism": "protonation",
+      "precursor_substrate_SMILES": "CC(O)(C)C(O)(C)C",
+      "chemical_substrate_SMILES": "CC(O)(C)C([O+])(C)C",
+      "starting_reagents": [
+        "A:"
+      ],
+      "end_reagents": [
+        [
+          "CB:"
+        ]
+      ]
+    },
+    {
+      "index": 1,
+      "mechanism": "leaving group removal",
+      "precursor_substrate_SMILES": "CC(O)(C)C([O+])(C)C",
+      "chemical_substrate_SMILES": "CC(O)(C)[C+](C)C",
+      "starting_reagents": [],
+      "end_reagents": [
+        [
+          "A:",
+          "CB:"
+        ],
+        [
+          "A:",
+          "O"
+        ]
+      ]
+    },
+    {
+      "index": 2,
+      "mechanism": "alkyl shift",
+      "precursor_substrate_SMILES": "CC(O)(C)[C+](C)C",
+      "chemical_substrate_SMILES": "CC([C+](O)C)(C)C",
+      "starting_reagents": [],
+      "end_reagents": [
+        [
+          "CB:"
+        ],
+        [
+          "O"
+        ],
+        [
+          "A:",
+          "O"
+        ]
+      ]
+    },
+    {
+      "index": 3,
+      "mechanism": "bond",
+      "precursor_substrate_SMILES": "CC([C+](O)C)(C)C",
+      "chemical_substrate_SMILES": "CC(C(=[O+])C)(C)C",
+      "starting_reagents": [],
+      "end_reagents": [
+        [
+          "CB:"
+        ],
+        [
+          "O"
+        ],
+        [],
+        [
+          "A:",
+          "O"
+        ]
+      ]
+    },
+    {
+      "index": 4,
+      "mechanism": "deprotonation",
+      "precursor_substrate_SMILES": "CC(C(=[O+])C)(C)C",
+      "chemical_substrate_SMILES": "CC(C(=O)C)(C)C",
+      "starting_reagents": [],
+      "end_reagents": [
+        [
+          "CB:"
+        ],
+        [
+          "O"
+        ],
+        [],
+        [],
+        [
+          "A:",
+          "O",
+          "[O+]"
+        ]
+      ]
+    }
+  ],
+  "urls": [
+    "https://en.wikipedia.org/wiki/Pinacol_rearrangement"
+  ]
+},{
+  "_id": {
+    "$oid": "624a7cfe7716562eb918c4a9"
+  },
+  "reaction_name": "ritter reaction",
+  "urls": [
+    "https://www.organic-chemistry.org/namedreactions/ritter-reaction.shtm",
+    "https://pubchem.ncbi.nlm.nih.gov/compound/86586183",
+    "https://en.wikipedia.org/wiki/Ritter_reaction"
+  ],
+  "steps": [
+    {
+      "index": 0,
+      "mechanism": "lewis acid base",
+      "precursor_substrate_SMILES": "C[C+](C)C",
+      "chemical_substrate_SMILES": "CC(C)(C)[N+]#CC",
+      "starting_reagents": [
+        "CC#N"
+      ],
+      "end_reagents": [
+        []
+      ],
+      "description": "Add O to [N+]#C carbon"
+    },
+    {
+      "index": 1,
+      "mechanism": "hydrate",
+      "precursor_substrate_SMILES": "CC(C)(C)[N+]#CC",
+      "chemical_substrate_SMILES": "CC(C)(C)N=C(C)O",
+      "starting_reagents": [
+        "O"
+      ],
+      "end_reagents": [
+        [],
+        [
+          "O"
+        ]
+      ]
+    },
+    {
+      "index": 2,
+      "mechanism": "protonation",
+      "precursor_substrate_SMILES": "CC(C)(C)N=C(C)O",
+      "chemical_substrate_SMILES": "CC(C)(C)[N+]=C(C)O",
+      "starting_reagents": [],
+      "end_reagents": [
+        [],
+        [
+          "O"
+        ],
+        [],
+        [
+          "O",
+          "[H+]"
+        ]
+      ]
+    },
+    {
+      "index": 3,
+      "mechanism": "bond",
+      "precursor_substrate_SMILES": "CC(C)(C)[N+]=C(C)O",
+      "chemical_substrate_SMILES": "CC(C)(C)NC(C)=O",
+      "end_reagents": [
+        [],
+        [
+          "O"
+        ],
+        [],
+        [],
+        [
+          "O",
+          "[H+]"
+        ]
+      ],
+      "starting_reagents": []
+    },
+    {
+      "index": 4,
+      "precursor_substrate_SMILES": "CC(C)(C)NC(C)=[O+]",
+      "chemical_substrate_SMILES": "CC(C)(C)NC(C)=O",
+      "end_reagents": [
+        [],
+        [
+          "O"
+        ],
+        [],
+        [],
+        [],
+        [
+          "O",
+          "[H+]",
+          "[O+]"
+        ]
+      ],
+      "starting_reagents": [],
+      "mechanism": "deprotonation"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "62c8f5a768151f2ddf8a2e8c"
+  },
+  "reaction_name": "gabriel synthesis",
+  "urls": [
+    "https://www.masterorganicchemistry.com/2018/01/31/the-gabriel-synthesis/",
+    "https://byjus.com/chemistry/gabriel-phthalimide-synthesis-mechanism/",
+    "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Supplemental_Modules_(Organic_Chemistry)/Amines/Synthesis_of_Amines/Gabriel_Synthesis",
+    "https://www.organic-chemistry.org/namedreactions/gabriel-synthesis.shtm"
+  ],
+  "steps": [
+    {
+      "index": 0,
+      "mechanism": "bronsted lowery acid base",
+      "precursor_substrate_SMILES": "O=C(N2)C1=CC=CC=C1C2=O",
+      "chemical_substrate_SMILES": "O=C([N-]2)C1=CC=CC=C1C2=O",
+      "starting_reagents": [
+        "[K+][O-]"
+      ],
+      "end_reagents": [
+        [
+          "[K+]O"
+        ]
+      ],
+      "description": "Deprotonate N on substrate using reagent [K+][O-], adding the hydrogen to [O-]"
+    },
+    {
+      "index": 1,
+      "mechanism": "lewis acid base",
+      "precursor_substrate_SMILES": "O=C([N-]2)C1=CC=CC=C1C2=O",
+      "chemical_substrate_SMILES": "O=C([N-]2[K+])C1=CC=CC=C1C2=O",
+      "starting_reagents": [],
+      "end_reagents": [
+        [
+          ""
+        ],
+        [
+          "[K+]O"
+        ]
+      ],
+      "description": "Bond K from reagent to N on substrate, breaking bond between K and O."
+    },
+    {
+      "index": 2,
+      "mechanism": "SN2",
+      "precursor_substrate_SMILES": "O=C([N-]2[K+])C1=CC=CC=C1C2=O",
+      "chemical_substrate_SMILES": "O=C(N2([K+])CC)C1=CC=CC=C1C2=O",
+      "starting_reagents": [
+        "CCBr"
+      ],
+      "end_reagents": [
+        [],
+        [],
+        [
+          "[K+]O",
+          "CCBr",
+          "Br"
+        ]
+      ],
+      "reagents_filter": "*"
+    },
+    {
+      "index": 3,
+      "mechanism": "lewis acid base",
+      "precursor_substrate_SMILES": "O=C(N2([K+])CC)C1=CC=CC=C1C2=O",
+      "chemical_substrate_SMILES": "O=C(N2CC)C1=CC=CC=C1C2=O",
+      "starting_reagents": [],
+      "end_reagents": [
+        [],
+        [],
+        [],
+        [
+          "[K+]O",
+          "CCBr",
+          "[Br-][K+]"
+        ]
+      ],
+      "description": "Bond K atom on substrate to Br reagent, breaking the substrate NK bond (reagent attack on substrate)  "
+    },
+    {
+      "index": 4,
+      "mechanism": "distill",
+      "precursor_substrate_SMILES": "O=C(N2CC)C1=CC=CC=C1C2=O",
+      "chemical_substrate_SMILES": "O=C(N2CC)C1=CC=CC=C1C2=O",
+      "end_reagents": [
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      "starting_reagents": [],
+      "description": "Remove all reagents leaving just the substrate"
+    },
+    {
+      "index": 5,
+      "mechanism": "lewis acid base",
+      "precursor_substrate_SMILES": "O=C(N2CC)C1=CC=CC=C1C2=O",
+      "chemical_substrate_SMILES": "[O-]C(N2CC)(C1=CC=CC=C1C2=O)O",
+      "end_reagents": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      "starting_reagents": [
+        "[O-]"
+      ],
+      "reagents_filter": "*",
+      "description": "Oxygen cation (reagent, base) attacks one of the carbonyl carbons (substrate, acid).",
+      "status": "confirmed"
+    },
+    {
+      "index": 6,
+      "mechanism": "bond",
+      "precursor_substrate_SMILES": "[O-]C(N2CC)(C1=CC=CC=C1C2=O)O",
+      "chemical_substrate_SMILES": "O=C(C1=CC=CC=C1C([N-]CC)=O)O",
+      "starting_reagents": [],
+      "end_reagents": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      "description": "Make double bond between oxygen anion and carbon, breaking the nitrogen bond."
+    },
+    {
+      "index": 7,
+      "mechanism": "proton transfer",
+      "precursor_substrate_SMILES": "O=C(C1=CC=CC=C1C([N-]CC)=O)O",
+      "chemical_substrate_SMILES": "O=C(C1=CC=CC=C1C(NCC)=O)[O-]",
+      "starting_reagents": [],
+      "end_reagents": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+      ]
+    },
+    {
+      "index": 8,
+      "mechanism": "lewis acid base",
+      "precursor_substrate_SMILES": "O=C(C1=CC=CC=C1C(NCC)=O)[O-]",
+      "chemical_substrate_SMILES": "O=C(C1=CC=CC=C1C(NCC)([O-])O)[O-]",
+      "starting_reagents": [
+        "[O-]"
+      ],
+      "end_reagents": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+      ]
+    },
+    {
+      "index": 9,
+      "mechanism": "bond",
+      "precursor_substrate_SMILES": "O=C(C1=CC=CC=C1C(NCC)([O-])O)[O-]",
+      "chemical_substrate_SMILES": "O=C(C1=CC=CC=C1C(=O)O)[O-]",
+      "starting_reagents": [],
+      "end_reagents": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [
+          "[N-]CC"
+        ]
+      ]
+    },
+    {
+      "index": "10",
+      "mechanism": "deprotonation",
+      "chemical_substrate_SMILES": "O=C(C1=CC=CC=C1C(=O)[O-])[O-]",
+      "starting_reagents": [
+        "[N-]CC"
+      ],
+      "end_reagents": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [
+          "[N-]CC",
+          "NCC"
+        ]
+      ],
+      "precursor_substrate_SMILES": "O=C(C1=CC=CC=C1C(=O)O)[O-]",
+      "reagents_filter": "*"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "724a7cfe7716562eb918c4a9"
+  },
+  "reaction_name": "wittig reaction",
+  "starting_product": [
+    "aldehyde",
+    "ketone"
+  ],
+  "end product": "alkene",
+  "urls": [
+    "https://courses.lumenlearning.com/suny-potsdam-organicchemistry2/chapter/20-4-the-wittig-reaction/"
+  ],
+  "steps": [
+    {
+      "index": 0,
+      "mechanism": "lewis acid base",
+      "precursor_substrate_SMILES": "C(=O)C",
+      "chemical_substrate_SMILES": "C([O-])(C)C(CCC)[P+](C1=CC=CC=C1)(C2=CC=CC=C2)C3=CC=CC=C3",
+      "starting_reagents": [
+        "[C-](CCC)[P+](C1=CC=CC=C1)(C2=CC=CC=C2)C3=CC=CC=C3"
+      ],
+      "end_reagents": [
+        []
+      ],
+      "description": "Reagent (phosphorane) carbon anion attacks substrate carbonyl carbon, breaking the C=O bond. "
+    },
+    {
+      "index": 1,
+      "mechanism": "bond",
+      "precursor_substrate_SMILES": "C([O-])(C)C(CCC)[P+](C1=CC=CC=C1)(C2=CC=CC=C2)C3=CC=CC=C3",
+      "chemical_substrate_SMILES": "C(O[P](CCCC)(C1=CC=CC=C1)(C2=CC=CC=C2)C3=CC=CC=C3)(CC)",
+      "starting_reagents": [],
+      "end_reagents": [
+        [],
+        []
+      ],
+      "description": "Bond oxygen anion to phosphorus atom creating a box intermediate."
+    },
+    {
+      "index": 2,
+      "mechanism": "bond",
+      "precursor_substrate_SMILES": "C(O[P](CCCC)(C1=CC=CC=C1)(C2=CC=CC=C2)C3=CC=CC=C3)(CC)",
+      "chemical_substrate_SMILES": "C([O+]=[P](C1=CC=CC=C1)(C2=CC=CC=C2)C3=CC=CC=C3)(C)[C-]CCC",
+      "starting_reagents": [],
+      "end_reagents": [
+        [],
+        [],
+        []
+      ],
+      "description": "Create double bond between oxygen and phosphorus atom. This should break the P-C bond where the carbon atom is not a ringbond parent."
+    },
+    {
+      "index": 3,
+      "mechanism": "bond",
+      "precursor_substrate_SMILES": "C([O+]=[P](C1=CC=CC=C1)(C2=CC=CC=C2)C3=CC=CC=C3)(C)[C-]CCC",
+      "chemical_substrate_SMILES": "C(C)=CCCC",
+      "starting_reagents": [],
+      "end_reagents": [
+        [],
+        [],
+        [],
+        [
+          "O=[P](C1=CC=CC=C1)(C2=CC=CC=C2)C3=CC=CC=C3"
+        ]
+      ],
+      "description": "Bond C- to adjacent carbon."
+    }
+  ]
+},
+
+{
+  "_id": {
+    "$oid": "63fbd26cf2c9b220cc641841"
+  },
+  "reaction_name": "hydroboration",
+  "starting_product": [
+    "alkene"
+  ],
+  "end product": "alcohol",
+  "urls": [],
+  "steps": [
+    {
+      "index": 0,
+      "function": "OneTwoAddition",
+      "mechanism": "1,2 addition",
+      "precursor_substrate_SMILES": "CC(=C)C",
+      "chemical_substrate_SMILES": "CC(C)C[B]",
+      "starting_reagents": [
+        "[BH3]"
+      ],
+      "end_reagents": [
+        []
+      ],
+      "description": "Borane hydrogen attacks substrate carbon double bond. At the same time substrate carbon double bonds attacks teh boron atom  creating a bond."
+    },
+    {
+      "index": 1,
+      "function": "Reduce",
+      "mechanism": "Reduction",
+      "precursor_substrate_SMILES": "CC(C)C[B]",
+      "chemical_substrate_SMILES": "CC(C)CO",
+      "starting_reagents": [
+        "OO",
+        "[Na]O"
+      ],
+      "end_reagents": [
+        [],
+        [],
+        []
+      ],
+      "description": "Reduce using hydrogen peroxide and sodium hydroxide to replace BH2 group with alcohol group."
+    }
+  ]
+},
+
+
+{
+  "reaction_name": "dihydroxylation",
+  "starting_product": [
+    "alkene"
+  ],
+  "end product": "glycol",
+  "urls": [
+    "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Map%3A_Organic_Chemistry_(Smith)/12%3A_Oxidation_and_Reduction/12.09%3A_Dihydroxylation"
+  ],
+  "steps": [
+    {
+      "index": 1,
+      "function": "LewisAcidBase",
+      "mechanism": "lewis acid base",
+      "precursor_substrate_SMILES": "CC(C)=C(C)(C)",
+      "chemical_substrate_SMILES": "CCCC",
+      "starting_reagents": [
+        "O=[Os](=O)(=O)=O",
+        "OO"
+      ],
+      "end_reagents": [
+        []
+      ],
+      "description": "Substrate carbon double bond attacks reagent oxygen atom converting the O=Os bond into a single bond."
+    },
+    {
+      "index": 2,
+      "function": "Reduce",
+      "mechanism": "reduction",
+      "precursor_substrate_SMILES": "CCCCC",
+      "chemical_substrate_SMILES": "CCCC",
+      "starting_reagents": [
+        "S"
+      ],
+      "end_reagents": [
+      ],
+      "description": "Osmate ester is reduced to give a syn diol (glycol)."
+    }
+  ]
+}
+
+]

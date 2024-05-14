@@ -1,0 +1,9 @@
+FUNCTION AcidDisassociationConstant(molecule:object):
+    pKa = pKa of molecule
+    Ka = 10 raised to the power of (-pKa)
+    RETURN Ka
+END FUNCTION
+
+# Example usage for ethanol with a pKa of 15.9
+KaEthanol = AcidDisassociationConstant(ethanol)
+print("The acid dissociation constant (Ka) for ethanol is " + KaEthanol formatted with 5 decimal places)

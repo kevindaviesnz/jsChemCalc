@@ -1,0 +1,25 @@
+CLASS MoleculeManager
+
+    METHODS
+
+        METHOD
+
+            addDativeBondBetweenBondedAtoms(molecule)
+
+                # A coordinate bond (also called a dative covalent bond) is a covalent bond (a shared pair of electrons) in which
+                # both electrons come from the same atom
+
+                target atom = GET atom that can accept an electron pair FROM molecule
+                source atom = GET that atom has at least one free electron pair AND is bonded to target atom FROM molecule
+
+                ADD free electron pair REVERSED to target atom
+
+            RETURN molecule
+
+        END METHOD
+
+    END METHODS
+
+END CLASS
+
+

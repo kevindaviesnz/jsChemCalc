@@ -1,0 +1,86 @@
+CLASS ContainerFactory
+    PARAMETERS
+        substrate
+        reagents
+        solvent
+        logger
+
+    ATTRIBUTES
+        solvent: object
+        reactants: array
+
+    METHODS
+        METHOD getReactant()
+            RETURN last reactant added to the container
+        END METHOD
+
+        METHOD renderReactantsAsSmiles()
+            FOREACH reactants
+                IF reactant NOT 'A:', 'B:', 'CA:', 'CB' THEN
+                    RETURN reactant converted to SMILES
+                END IF
+            END FOREACH
+        END METHOD
+
+        METHOD removeReagent(reagent, logger)
+            REMOVE matching reagent from reagents
+        END METHOD
+
+        METHOD removeReactant(reactant, logger)
+            REMOVE matching reactant from reactants
+        END METHOD
+
+        METHOD lookupReactantBySmiles(SMILES, logger)
+            RETURN reactant WHERE SMILES property = SMILES
+        END METHOD
+
+        METHOD getReactantIndex(reactant, logger)
+            RETURN INDEX in ARRAY of matching reactant
+        END METHOD
+
+        METHOD lookupReactant(reactant, logger)
+            FIND matching reactant IN reactants
+            RETURN TRUE IF reactant found OTHERWISE false
+        END METHOD
+
+        METHOD getTheNumberOfUnitsOfReactantInContainer(reactant, logger)
+            FIND matching reactant IN reactants
+            RETURN units of matching reactant
+        END METHOD
+
+        METHOD addReactant(reactant, units, logger)
+            IF units IS 0
+                ADD reactant AND units to reactants
+            ELSE
+                number of existing units = CALL getTheNumberOfUnitsOfReactantInContainer
+                IF number of existing units IS 0
+                    ADD reactant AND units to reactants
+                ELSE
+                    reactant = CALL findReactant
+                    SET reactant units TO number of existing units + units
+                END IF
+            END IF
+        END METHOD
+
+        METHOD filterReagents(reagent, logger)
+            IF reagent IS '*'
+                SET reagents to EMPTY array
+            ELSE
+                REMOVE matching reagent FROM reagents
+            END IF
+        END METHOD
+
+        METHOD fetchRandomReactantByReactionRate()
+            RETURN RANDOM reactant WEIGHTED reaction rate AND units
+        END METHOD
+
+        METHOD fetchRandomReactantByAcidity()
+            RETURN RANDOM reactant WEIGHTED acidity AND units
+        END METHOD
+
+        METHOD fetchRandomReactantByBasity()
+            RETURN RANDOM reactant WEIGHTED basity AND units
+        END METHOD
+
+
+END CLASS

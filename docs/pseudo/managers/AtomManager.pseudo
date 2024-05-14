@@ -1,0 +1,40 @@
+CLASS AtomManager
+
+    METHODS
+
+        METHOD
+            removeElectron(atom, electron):
+                IF electon is a FREE electron THEN remove electron from atom
+                RETURN atom
+        END METHOD
+
+        METHOD
+            addElectronPair(atom,electronPair):
+                ADD electron pair to atom electron pairs
+                RETURN atom
+        END METHOD
+
+        METHOD
+            addReactant(container, reactant):
+               ADD reactant to reactants array in container
+               RETURN container
+        END METHOD
+
+        METHOD
+            fetchTheNumberOfUnitsOfTheReactantInTheContainer(container, reactant):
+                matching reactant = CALL METHOD findMatchingReactant
+                RETURN matching_reactant
+        END METHOD
+
+        METHOD
+            findMatchingReactant(container, reactant):
+               reactant = FROM reactants IN container FETCH reactant with matching canonicalSmiles
+               RETURN reactant
+        END METHOD
+
+    END METHODS
+
+
+END CLASS
+
+

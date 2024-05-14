@@ -1,0 +1,29 @@
+
+FUNCTION StoichiometricCoefficients(reactant: object, base: object, reactantUnits: number, baseUnits: number):
+    
+    # Create a dictionary to store stoichiometric coefficients
+    coefficients = ARRAY
+        reactant: reactantUnits,
+        base: baseUnits,
+        product1: 0,  # You can add more products if needed
+        product2: 0   # Add more products as necessary
+    
+    # Check if the reaction is balanced with the given coefficients
+    IF coefficients.reactant equals coefficients.base:
+        coefficients.product1 = coefficients.reactant
+        coefficients.product2 = coefficients.reactant
+    ELSE:
+        ERROR "The reaction is not balanced with the given coefficients."
+
+    return coefficients
+
+END FUNCTION
+
+# Example usage:
+reactant = "Acetic Acid"
+base = "Ammonia"
+reactantUnits = 2
+baseUnits = 10
+
+stoichiometricCoefficients = getStoichiometricCoefficients(reactant, base, reactantUnits, baseUnits)
+print(stoichiometricCoefficients)

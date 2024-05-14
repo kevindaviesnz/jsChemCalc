@@ -1,0 +1,14 @@
+
+https://chemistry.stackexchange.com/questions/67073/why-is-carbon-dioxide-considered-a-lewis-acid
+
+Carbon dioxide (O=C=0) is a Lewis Acid (electron pair acceptor) as the carbon atom has a partial positive charge meaning that
+due to resonance it can accept an electron pair.
+
+Rule: An atom is Lewis acid if R-X-R and X has a positive or partial positive charge.
+
+https://chemistry.stackexchange.com/questions/67073/why-is-carbon-dioxide-considered-a-lewis-acid
+
+When carbon dioxide is added to water the oxygen atom is not protonated by water due to competition between the
+proton and the lewis acid - base reaction where the electron pair to be shared comes from the water oxygen atom.
+
+Rule: Where both a Bronsted Lowry and Lewis acid-base reaction can happen, the Lewis acid base reaction takes precedence.

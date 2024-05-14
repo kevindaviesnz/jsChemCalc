@@ -1,0 +1,20 @@
+// This should return a JSON object with no methods.
+FUNCTION ReactionFactory (reactant: object, substrate: object, solvent: object, logger: object)
+
+     IF reactant is the same as substrate OR /* Check for equilibrium condition */:
+        RETURN false
+     END IF
+
+     SAVE container state
+
+     // Note where there is an electrophilic carbon lewis acid base takes priority.
+     DO reaction AND RETURN EITHER false OR JSON object:
+         ATTRIBUTES
+             reactant,
+             substrate,
+             solvent,
+             name eg "lewis acid base"
+             container state before reaction
+             container state after reaction
+
+END FUNCTION

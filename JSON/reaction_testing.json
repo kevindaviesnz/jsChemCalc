@@ -1,0 +1,33 @@
+[{
+  "_id": {
+    "$oid": "63bb965144f1004d6b21fe4b"
+  },
+  "name": "E1",
+  "start": "CCCCC",
+  "finish": "CN1C2CCC1C(C(C2)OC(=O)C3=CC=CC=C3)C(=O)OC",
+  "steps": 5
+},{
+  "_id": {
+    "$oid": "63bcdd37b6236c2f6ab8ad4f"
+  },
+  "name": "Reeductive amination",
+  "start": "C=O",
+  "finish": "CCNC",
+  "steps": 1
+},
+{
+  "_id": {
+      "$oid": "63f2eb71069b05571205eb02"
+  },
+  "name": "Oxymercuration",
+  "start": "C=C(C)C",
+  "finish": "CC(O)(C)(C)",
+  "steps": 1
+}, 
+{
+  "name": "Pinacol rearrangement",
+  "start": "CC(O)(C)C(O)(C)C",
+  "finish": "CC(C(=O)C)(C)C",
+  "steps": 1
+}]
+

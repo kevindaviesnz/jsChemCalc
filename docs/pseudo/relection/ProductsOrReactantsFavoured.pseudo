@@ -1,0 +1,29 @@
+
+1. Define a function to calculate Keq:
+   Function calculateKeq(pKaReactant, pKaProduct):
+      pKeq = pKaReactant - pKaProduct
+      Keq = 10^(-pKeq)
+      Return Keq
+
+2. Input the pKa values of the acid (reactant) and its conjugate acid (product).
+   pKaReactant = Input("Enter the pKa of the acid (reactant): ")
+   pKaProduct = Input("Enter the pKa of the conjugate acid (product): ")
+
+3. Calculate Keq using the calculateKeq function:
+   Keq = calculateKeq(pKaReactant, pKaProduct)
+
+4. Check the value of Keq:
+   If Keq > 1:
+      Print("The reaction favors the products.")
+   ElseIf Keq < 1:
+      Print("The reaction favors the reactants.")
+   Else:
+      Print("The reaction is at equilibrium.")
+
+5. End
+
+6. Main:
+   Call the main function to execute the algorithm.
+
+
+

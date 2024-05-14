@@ -1,0 +1,36 @@
+Help
+
+To run unit tests:
+
+To synthesise a molecule:
+ChemCalc > synthesize [molecule name]
+Examples:
+ChemCalc > synthesize oxidanium
+ChemCalc > synthesize ethanol
+
+To see list of commands:
+ChemCalc > commands
+
+To view flask:
+ChemCalc > container
+
+To empty flask
+ChemCalc > empty
+
+To remove chemical from flask
+ChemCalc > distill [chemical]
+
+To add chemical to flask:
+ChemCalc > add [n] [chemical]
+Example:
+ChemCalc > add 10 pinacol
+ChemCalc > add 1 hydrochloric acid
+
+To add solvent:
+ChemCalc > add polar aprotic solent
+ChemCalc > add polar protic solvent
+ChemCalc > add non-polar solvent
+
+Press ENTER to continue
+
+

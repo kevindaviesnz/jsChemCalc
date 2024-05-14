@@ -1,0 +1,15 @@
+FUNCTION fetchAllPossibleReactions(container:object):
+
+    FOR EACH reactant in the container
+
+        GET other reactants in container AS substrates
+        FOR each substrate
+            reaction function = GENERATE a function to run a reaction USING the current reactant and current substrate
+            ADD reaction to reactions array ONLY IF reaction function IS NOT false.
+        END FOR
+
+    END FOR
+
+END FUNCTION
+
+

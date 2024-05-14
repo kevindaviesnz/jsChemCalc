@@ -1,0 +1,25 @@
+
+FUNCTION NucleophilicAttack (
+container:object,
+electron_pair_acceptor_molecule: object,
+electron_pair_acceptor_atom: object,
+electron_pair_donor_molecule: object,
+electron_pair_donor_atom: object,
+logger:object
+)
+
+# ref https://en.wikiversity.org/wiki/Reactivity_and_Mechanism
+
+IF electron pair acceptor molecule = electron pair donor molecule
+ERROR Molecule are the same
+END IF
+
+BOND electron_pair_donor_atom TO electron_pair_acceptor_atom
+
+ADD electron_pair_donor_molecule atoms TO electron_pair_acceptor_molecule
+
+RETURN electron_pair_acceptor_molecule
+
+END FUNCTION
+
+

@@ -1,0 +1,29 @@
+acid protonation of a ketone [verified]
+
+[O-][S](=O)(=O)O (pKa 2) donates an electron pair to CCCC(=[O+])C (pKa -2.5) forming a new species CCCC(O)(C)O[S](=O)(=O)O
+
+CCCC+C (carbocation) reacting with [HSO4]^- (conjugate base of sulfuric acid),
+
+Under normal standard conditions, it's more likely that the negatively charged oxygen in OS(=O)O (the conjugate base of sulfuric acid) will act as a Lewis base and donate a pair of electrons to the carbocation (C+) in CCCC(=[O+])C. This interaction could result in the formation of a new chemical bond between the oxygen and the carbon atom, reducing the positive charge on the carbon.
+
+This type of reaction is in line with Lewis acid-base theory, where Lewis bases (electron pair donors) tend to react with Lewis acids (electron pair acceptors) to form coordinate covalent bonds.
+
+However, the specific outcome of the reaction can depend on various factors, including the concentration of reactants, temperature, and the presence of other functional groups or solvents. It's also important to note that reactions involving carbocations can be complex and may yield multiple products depending on the reaction conditions. Therefore, experimental data and a detailed analysis would be needed to determine the exact products and reaction pathway.
+
+
+
+In a reductive amination reaction, the attack of the nitrogen atom of the amine on the carbonyl carbon is a key step in forming an imine or iminium ion intermediate, which eventually leads 
+to the formation of the desired amine product. This reaction proceeds through a series of steps, and the attack by the amine nitrogen is favored for several reasons:
+
+Nucleophilicity of Nitrogen: The nitrogen atom in the amine is more nucleophilic than the conjugate base of the acid. This is because nitrogen is less electronegative than oxygen (common in 
+many acids), making it more willing to donate electrons. The nitrogen atom has a lone pair of electrons that can be used for nucleophilic attack.
+
+Formation of Stable Intermediate: The attack of the amine nitrogen on the carbonyl carbon forms an intermediate known as an imine or iminium ion, depending on the reaction conditions. These intermediates are relatively stable and can be further reduced to form the amine product.
+
+Driving Force for Reaction: The formation of the imine or iminium ion is thermodynamically favorable due to the partial double bond character of the C=N or C=N+ bond, which stabilizes the intermediate. This is a key driving force for the reaction.
+
+Availability of Protons: In the reaction, the carbonyl oxygen is protonated by an acid to make it a better leaving group. This protonation also creates a positively charged hydrogen atom (H+), which can further interact with the amine nitrogen and facilitate the nucleophilic attack.
+
+Reaction Mechanism: The reaction mechanism is typically understood as involving the attack of the amine's lone pair on the electrophilic carbonyl carbon, followed by proton transfer and reduction steps.
+
+Overall, the attack of the amine nitrogen on the carbonyl carbon is the most favorable pathway due to considerations of nucleophilicity, stability of intermediates, and thermodynamics. It leads to the formation of the desired amine product through a series of well-defined reaction steps.

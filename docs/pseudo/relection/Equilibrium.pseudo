@@ -1,0 +1,17 @@
+
+FUNCTION Equilibrum (reactants:array, products: array, logger: object)
+
+   SET reverse to FALSE
+   equilibrium constant = CALCULATE equilibrium constant
+   GET whether products favored over reactants OR reactants favored over products
+   ratio = GET ratio of products to reactants
+   IF products favored AND ratio < 1 OR ratio < equilibrium constant ratio
+       reverse = CALCULATE chance of reaction not occuring due to equilibrium
+   END IF
+
+   RETURN reverse
+
+END FUNCTION
+
+
+

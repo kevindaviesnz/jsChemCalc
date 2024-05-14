@@ -1,0 +1,4 @@
+"convert alkene to alcohol" = oxymercuration
+"convert 1,2 diol to ketone" = pinacol rearrangment
+"convert nitrile to amide" = ritter
+"convert alkene to glycol" = Dihydroxylation

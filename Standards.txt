@@ -1,0 +1,83 @@
+OVERVIEW
+
+ChemCalc3 consists of "components", lots of them. Each file is a single component. Each component consists of a single exported function
+with the executed code at the top and child functions below. A component returns either false, undefined, or a JSON data object. In many
+cases a component will implicitly return a container that is passed in as a parameter. In those cases the container should be treated as
+the return value.
+
+PREFIXES
+
+Use "determine<X>" as a prefix if the function or method will use logic to decide X. Examples of X are determining what reaction
+will happen next, etc. 
+
+use "fetch<X>" where the function or method will return a single value. Unlike "determine<X>" the function or method should
+NOT "decide" what particular value to return from a list of possible values. The return value can be an array.
+
+Use "get<X>" to get data or values where there is very little if any logic involved. Usually this will involve an object or
+data structure.
+
+Use "try<X>" to test something before actually doing it. For example we may need to test whether protonation is possible without
+actually protonating the molecule.
+
+Use "generateX" where the function will be generating a new value and returning it.
+
+Use <X>Is<Y> where the function will return a boolean depending on whether <X> is <Y> eg whether a molecule is a lewis acid.
+
+Functions and methods
+
+"Base" molecule or atom parameters should be put before "acid" molecule or atom when provided as parameters to a function or method.
+
+If a function of method is intented to find a value and that value is not found then that function or method should return
+undefined, NOT false.
+
+
+Variable names
+
+Variable of basic type including arrays should use "_" and not camel notation.
+
+Objects and custom data types should use camel notation.
+
+
+State management classes
+
+These should be named <X>StateManager where <X> is the name of the data (JSON) object. An <X>StateManager should have NO variables.
+Methods should only operate on the data object which should be passed in as a parameter to the method. All methods should change
+the state of the data object and return the data object after creating a new instance of the data object. As a rule a state manager
+class should not have any parameters or a constructor.
+
+
+Other objects
+
+An object should either have only properties (data object) or should have only methods (state manager). The only exception are objects that
+are intended to be used internally only. These objects should be as simple as possible.
+
+
+Readability
+
+Anyone should be able to read the code and understand what it means. It should read like a story or news article.
+
+Use "false === <x>" or "<x> === false" instead of "!<x>".
+Use "if(true === <x>){...}" or "if(<x> === true){...}" instead of "if(<x>) { ... }"
+
+If it is not clear what an operation or set of operations is returning then assign the return value to a
+variable with a meaningful name.
+eg NOT function XYX () {
+   return <do some complicated stuff>
+}
+INSTEAD function XYZ() {
+   return abc = <do some complicated stuff>
+   return abc
+} where "abc" has some meaningful name such as "days_until_new_year"
+Ideally wrap the operations into a function.
+
+Tests
+
+Debugging:
+Run node tests/chemtest.js
+
+For unit tests:
+Unit tests are located in the unittests directory. To run them:
+$ jest
+
+To run rdkit
+$ pip install rdkit

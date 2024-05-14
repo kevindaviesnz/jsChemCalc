@@ -1,0 +1,39 @@
+CLASS ContainerStateManager
+
+    METHODS
+
+        METHOD
+            findMatchingReactant(container, reactant):
+                FETCH reactant in reactants WHERE reactant IS SAME as reactant to find
+                RETURN reactant
+        END METHOD
+
+        METHOD
+            getReactantByIndex(container, reactant index):
+                RETURN reactant at reactant index FROM reactants IN the container
+        END METHOD
+
+        METHOD
+            addReactant(container, reactant):
+               ADD reactant to reactants array in container
+               RETURN container
+        END METHOD
+
+        METHOD
+            fetchTheNumberOfUnitsOfTheReactantInTheContainer(container, reactant):
+                matching reactant = CALL METHOD findMatchingReactant
+                RETURN matching_reactant
+        END METHOD
+
+        METHOD
+            findMatchingReactant(container, reactant):
+               reactant = FROM reactants IN container FETCH reactant with matching canonicalSmiles
+               RETURN reactant
+        END METHOD
+
+    END METHODS
+
+
+END CLASS
+
+

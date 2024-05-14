@@ -1,0 +1,38 @@
+{
+  "name": "chemcalc3",
+  "version": "1.0.0",
+  "description": "AI to model chemical reactions",
+  "main": "'tests/chemtest.js'",
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "node tests/chemtest.js"
+  },
+  "keywords": [
+    "chemistry"
+  ],
+  "author": "Kevin Davies",
+  "license": "ISC",
+  "dependencies": {
+    "atomic-sleep": "^1.0.0",
+    "chemcalc3": "^1.0.0",
+    "colors": "^1.4.0",
+    "deep-freeze": "^0.0.1",
+    "dotenv": "^16.3.1",
+    "help": "^3.0.2",
+    "lodash": "^4.17.21",
+    "mongodb": "^5.7.0",
+    "pubchem-access": "^1.0.1",
+    "range": "^0.0.3",
+    "should": "^13.2.3",
+    "simple-get": "^4.0.1",
+    "smiles": "^0.0.2",
+    "uniqid": "^5.4.0",
+    "winston": "^3.10.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}

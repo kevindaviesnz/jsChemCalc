@@ -1,0 +1,21 @@
+FUNCTION LewisAcidBase(baseMolecule: object, acidMoleuce: object, logger: object)
+
+# Ensure that this function only returns true or false without modifying the parameters.
+
+IF baseMolecule is generic AND acidMolecule is generic OR baseMolecule is weak base
+   RETURN false
+END IF
+
+# get atom that can donate an electron pair.
+GET base atom from baseMolecule
+# get atom that can accept an electron pair.
+GET acid atom from acidMolecule
+
+IF base atom not found AND acid atom not found
+   RETURN false
+END IF
+
+RETURN true
+
+
+

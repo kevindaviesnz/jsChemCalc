@@ -1,0 +1,52 @@
+<mxfile host="Electron" modified="2023-05-10T02:52:06.622Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.1.2 Chrome/106.0.5249.199 Electron/21.4.3 Safari/537.36" etag="Odb3EfOVsXMKySuHEmNa" version="21.1.2" type="device">
+  <diagram name="Page-1" id="41JY9q28KBEWxVUqUl5v">
+    <mxGraphModel dx="1349" dy="843" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Yi42nQBujMRKdudTVWPx-13" value="Atom" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="60" y="30" width="210" height="444" as="geometry">
+            <mxRectangle x="60" y="30" width="70" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Yi42nQBujMRKdudTVWPx-14" value="id: string&lt;br&gt;symbol: char&lt;br&gt;electronegativity: int&lt;br&gt;maxElectronsPerShell:array&lt;br&gt;charge:int&lt;br&gt;electronsPerShell:int&lt;br&gt;neutralAtomNumberOfBonds:int&lt;br&gt;atomicNumber:int&lt;br&gt;valenceElectronCount:int&lt;br&gt;atomSize:int&lt;br&gt;electronPairs:array&lt;br&gt;outerShellMaxNumberOfElectrons:int&lt;br&gt;&lt;br&gt;&lt;br&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="Yi42nQBujMRKdudTVWPx-13" vertex="1">
+          <mxGeometry y="26" width="210" height="304" as="geometry" />
+        </mxCell>
+        <mxCell id="Yi42nQBujMRKdudTVWPx-15" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="Yi42nQBujMRKdudTVWPx-13" vertex="1">
+          <mxGeometry y="330" width="210" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="Yi42nQBujMRKdudTVWPx-16" value="+ method(type): type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="Yi42nQBujMRKdudTVWPx-13" vertex="1">
+          <mxGeometry y="338" width="210" height="106" as="geometry" />
+        </mxCell>
+        <mxCell id="YdfJIkEGs6lm8Lwk3cR3-1" value="Container" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="300" y="30" width="290" height="260" as="geometry">
+            <mxRectangle x="60" y="30" width="70" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YdfJIkEGs6lm8Lwk3cR3-2" value="+ id: string&lt;br&gt;+ substrate: object&lt;br&gt;+ reagents: array&lt;br&gt;+ solvent: object or string&lt;br&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="YdfJIkEGs6lm8Lwk3cR3-1" vertex="1">
+          <mxGeometry y="26" width="290" height="84" as="geometry" />
+        </mxCell>
+        <mxCell id="YdfJIkEGs6lm8Lwk3cR3-3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="YdfJIkEGs6lm8Lwk3cR3-1" vertex="1">
+          <mxGeometry y="110" width="290" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="YdfJIkEGs6lm8Lwk3cR3-4" value="+ renderReagentsAsSmiles(): array&lt;br&gt;+ removeReagent(): array&lt;br&gt;+ lookupReagentBySmiles(): object or string&lt;br&gt;+ lookupReagent(): object or undefined&lt;br&gt;+ addSideProduct(): null&lt;br&gt;+ addSubstrate(): null&lt;br&gt;+ react(): null&lt;br&gt;+ filterReagents(): array" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="YdfJIkEGs6lm8Lwk3cR3-1" vertex="1">
+          <mxGeometry y="118" width="290" height="142" as="geometry" />
+        </mxCell>
+        <mxCell id="YdfJIkEGs6lm8Lwk3cR3-5" value="Molecule" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="620" y="30" width="280" height="600" as="geometry">
+            <mxRectangle x="60" y="30" width="70" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YdfJIkEGs6lm8Lwk3cR3-6" value="+ id: string&lt;br&gt;+ atoms: array&lt;br&gt;+ is_conjugate_base: boolean&lt;br&gt;+ is_conjugate_acid: boolean" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="YdfJIkEGs6lm8Lwk3cR3-5" vertex="1">
+          <mxGeometry y="26" width="280" height="84" as="geometry" />
+        </mxCell>
+        <mxCell id="YdfJIkEGs6lm8Lwk3cR3-7" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="YdfJIkEGs6lm8Lwk3cR3-5" vertex="1">
+          <mxGeometry y="110" width="280" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="YdfJIkEGs6lm8Lwk3cR3-8" value="+ moleculePKA(): array&lt;br&gt;+ functionalGroups(): array&lt;br&gt;+ pkaFn(): ?&lt;br&gt;+ canonicalSmiles(): string&lt;br&gt;+ isLastAtom(): boolean&lt;br&gt;+ isChildRingbondAtomOfCurrentAtom(): bool&lt;br&gt;+ childBonds(): array&lt;br&gt;+ atomRingBondNumber():number&lt;br&gt;+ isEndOfBranchAtom(): boolean&lt;br&gt;+ parentAtom(): object&lt;br&gt;+ atomBondType(): string&lt;br&gt;+&amp;nbsp;__findRingsv2(): array&lt;br&gt;+ branches(): array&lt;br&gt;+&amp;nbsp;__findMatchingRingBranch(): array&lt;br&gt;+ __isRing(): boolean&lt;br&gt;+ __getNextAtom(): object&lt;br&gt;+ __getBondType(): string&lt;br&gt;+ __SMILES(): string&lt;br&gt;+&amp;nbsp;__SMILES_w_recursion(): string&lt;br&gt;+ molecularFormula(): string&lt;br&gt;+ CID(): string&lt;br&gt;+ IUPACName(): string&lt;br&gt;+ heavyAtomCount(): number&lt;br&gt;+ tags(): array&lt;br&gt;+ netDoubleBondCount(): number&lt;br&gt;+ netCharge(): number&lt;br&gt;+ compressed(): object&lt;br&gt;+&amp;nbsp;isHydrohalicAcid(): boolean&lt;br&gt;+ isWeakBase(): boolean&lt;br&gt;+ isStrongLewisBase(): boolean&lt;br&gt;+ isStrongAcid(): boolean&lt;br&gt;+ id(): string&lt;br&gt;+ makeDativeBond(): object" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="YdfJIkEGs6lm8Lwk3cR3-5" vertex="1">
+          <mxGeometry y="118" width="280" height="482" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

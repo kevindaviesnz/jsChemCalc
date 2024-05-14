@@ -1,0 +1,6 @@
+FUNCTION ConjugateBase(molecule:object):
+   FIND proton donor atom
+   REMOVE proton FROM proton donor atom
+   REMOVE proton from molecule
+END FUNCTION
+

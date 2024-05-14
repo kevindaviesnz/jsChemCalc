@@ -1,0 +1,66 @@
+
+FUNCTION Stabilise (molecule:object, logger: object)
+
+FIND carbocation
+IF carbcation
+
+     # Look for a oxygen atom bonded to the carbocation and if an oxygen atom is found
+     # make a dative bond between the carbocation and the oxygen atom where the
+     #oxygen atom donates the two electrons. This should result in a double bond between the
+     #carbon and the oxygen atom.
+     # ref https://en.wikipedia.org/wiki/Pinacol_rearrangement
+     IF single oxygen bond to carbocation
+         MAKE dative bond BETWEEN oxygen AND carbocation
+         RETURN Stabilise(molecule, logger)
+     END IF
+
+     # Look for a nitrogen atom bonded to the carbocation and if a nitrogen atom is found
+     # make a dative bond between the carbocation and the nitrogen where the
+     # nitrogen atom donates the two electrons. This should result in a double bond between
+     # the carbon and the nitrogen atom.
+     # ref step 4 of https://cdn.masterorganicchemistry.com/wp-content/uploads/2019/10/3-formation-of-imine-from-ketone-with-amine-full-arrow-pushing-mechanism.gif
+     IF single nitrogen bond to carbocation
+         MAKE dative bond BETWEEN nitrogen AND carbocation
+         RETURN Stabilise(molecule, logger)
+     END IF
+
+     # E1
+     # Look for a negatively charged carbon bonded to the carbocation
+     IF negative carbon bond to carbocation
+         MAKE dative bond BETWEEN carbon AND carbocation
+         RETURN Stabilise(molecule, logger)
+     END IF
+
+     # Akyl shift
+     # ref https://en.wikipedia.org/wiki/Pinacol_rearrangement
+     akyl shift =  shift akyl group
+     IF akyl shift
+         RETURN Stabilise(molecule, logger)
+     ELSE
+         MAKE ionic bond BETWEEN carbocation and non carbon
+         RETURN Stabilise(molecule, logger)
+     END IF
+
+END IF
+
+IF carbon atom bonded to non terminal non carbon
+    MAKE dative bond BETWEEN carbon and non terminal non carbon
+ELSE IF carbon atom bonded to terminal non carbon
+    MAKE dative bond BETWEEN carbon and terminal non carbon
+ELSE
+    # Ozonolysis
+    # ref https://byjus.com/chemistry/ozonolysis-of-alkenes-alkynes-mechanism/
+    # [O+]O bond breaks, moving the electron pair to the oxygen atom that has a neutral charge
+    IF positive oxygen bonded to neutral non-terminal oxygen
+        BREAK BOND BETWEEN oxygen atoms
+    ELSE IF remove leaving group
+        RETURN Stabilise(molecule, logger)
+    END IF
+END IF
+
+RETURN molecule
+
+END FUNCTION
+
+
+

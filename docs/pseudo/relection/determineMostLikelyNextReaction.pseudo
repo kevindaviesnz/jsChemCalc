@@ -1,0 +1,33 @@
+FUNCTION determineMostLikelyNextReaction(reactant:object, reactions:array):
+
+    # Each reaction consists of a reactant ACTING on a substrate
+    # eg If the reactant donates a proton this is treated as the reactant PROTONATING the substrate.
+    # eg If the reactant accepts a proton this is treated as the reactant DEPROTONATING the substrate.
+
+    GET most likely reactant
+    GET most likely bronsted lowery base substrate FROM reactions with reactant
+    GET most likely bronsted lowery acid substrate FROM reactions with reactant
+    GET most likely lewis base substrate FROM reactions with reactant
+    GET most likely lewis acid substrate FROM reactions with reactant
+
+    IF reactant HAS electrophilic carbon
+        IF lewis acid base reaction found
+            return lewis acid base reaction
+        END IF
+    ELSE
+        IF bronsted lowery base substrate AND bronsted lowery acid substrate
+            GET whether to use bronsted lowery base as acid or base
+            return bronsted lowery base reaction
+        ELSE IF bronsted lowery base substrate
+            return bronsted lowery base reaction
+        ELSE IF bronsted lowery acid substrate
+            return bronsted lowery base reaction
+        ELSE IF lewis acid base reaction found
+            return lewis acid base reaction
+        END IF
+    END IF
+
+
+END FUNCTION
+
+

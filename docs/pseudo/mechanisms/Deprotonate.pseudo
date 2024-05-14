@@ -1,0 +1,51 @@
+FUNCTION Deprotonate(container: object, substrate: object, reactant: object, logger: object)
+    IF substrate and the reactant are the same
+        RETURN false
+    END IF
+
+    IF reactant is water AND substrate is hydronium
+        RETURN false
+    END IF
+
+    reactant molecule = reactant
+    substrate molecule = substrate
+
+    IF reactant molecule is NOT a generic base AND reactant molecule is NOT a generic conjugate base
+        atom to be protonated = GET atom from reactant molecule that will accept a proton
+    ELSE IF reactant molecule is a generic conjugate base
+        SET reactant molecule to generic acid
+    ELSE IF reactant molecule is a generic base
+        SET reactant molecule to generic conjugate acid
+    END IF
+
+    IF substrate molecule is NOT a generic acid AND substrate is NOT a generic conjugate acid
+        atom to be deprotonated = GET atom from substrate molecule that will donate a proton
+    ELSE IF substrate is a generic acid
+        SET substrate molecule to conjugate base
+    ELSE IF substrate is a generic conjugate acid
+        SET substrate molecule to generic acid
+    END IF
+
+    IF substrate is generic AND reactant is generic
+        REMOVE 1 unit of substrate FROM container
+        REMOVE 1 unit of reactant FROM container
+        ADD 1 unit of substrate molecule TO container
+        ADD 1 unit of reactant molecule TO container
+        RETURN
+    END IF
+
+    proton = GET proton from atom to be deprotonated
+    BREAK bond between proton AND atom to be deprotonated
+    REMOVE proton FROM reactant
+
+    BOND proton to atom to be protonated
+    ADD proton to reactant molecule
+
+    REMOVE 1 unit of original reactant FROM container
+    REMOVE 1 unit of original substrate FROM container
+
+    ADD 1 unit of deprotonated reactant TO container
+    ADD 1 unit of protonated substrate TO container
+
+    RETURN
+END FUNCTION

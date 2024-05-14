@@ -1,0 +1,7 @@
+FUNCTION ConjugateAcid(molecule:object):
+   FIND proton acceptor atom
+   BOND proton to proton acceptor atom
+   ADD proton to molecule
+END FUNCTION
+
+

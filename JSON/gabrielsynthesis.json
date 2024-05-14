@@ -1,0 +1,211 @@
+{
+  "reaction_name":"gabriel synthesis",
+  "urls":[
+    "https://www.masterorganicchemistry.com/2018/01/31/the-gabriel-synthesis/",
+    "https://byjus.com/chemistry/gabriel-phthalimide-synthesis-mechanism/",
+    "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Supplemental_Modules_(Organic_Chemistry)/Amines/Synthesis_of_Amines/Gabriel_Synthesis",
+    "https://www.organic-chemistry.org/namedreactions/gabriel-synthesis.shtm"
+  ],
+  "steps":[
+    {
+      "index":0,
+      "mechanism": "deprotonation",
+      "precursor_substrate_SMILES": "C1=CC=C2C(=C1)C(=O)NC2=O",
+      "chemical_substrate_SMILES": "C1=CC=C2C(=C1)C(=O)[N-]C2=O",
+      "starting_reagents":[
+        ["KOH"]
+      ],
+      "end_reagents":[
+        ["KOH","[K+]","H2O"]
+      ]
+    },
+    {
+      "index":1,
+      "mechanism": "lewis acid base",
+      "precursor_substrate_SMILES": "C1=CC=C2C(=C1)C(=O)[N-]C2=O",
+      "chemical_substrate_SMILES": "C1=CC=C2C(=C1)C(=O)N([K+])C2=O",
+      "starting_reagents":[
+        ["KOH:","[K+]","H2O"]
+      ],
+      "end_reagents":[
+        ["KOH:","[K+]","H2O"]
+      ]
+    },
+    {
+      "index":2,
+      "mechanism": "SN2",
+      "precursor_substrate_SMILES": "C1=CC=C2C(=C1)C(=O)N([K+])C2=O",
+      "chemical_substrate_SMILES": "C1=CC=C2C(=C1)C(=O)N(CC)C2=O",
+      "starting_reagents":
+      [
+        ["KOH:","[K+]","H2O"],
+        ["[K+]"],
+        ["CCBr"]
+      ],
+      "end_reagents":[
+        [
+          ["KOH:","[K+]","H2O"],
+          ["[K+]"],
+          ["CCBr", "KBr"]
+        ]
+      ]
+    },
+    {
+      "index":3,
+      "mechanism": "1,2 addition",
+      "precursor_substrate_SMILES": "C1=CC=C2C(=C1)C(=O)N(CC)C2=O",
+      "chemical_substrate_SMILES": "C1=CC=C2C(=C1)C(O)([O-])N(CC)C2=O",
+      "starting_reagents":[
+        [
+          ["KOH:","[K+]","H2O"],
+          ["[K+]"],
+          ["CCBr", "KBr"],
+          ["[O-]"]
+        ]
+      ],
+      "end_reagents":[
+        [
+          ["KOH:","[K+]","H2O"],
+          ["[K+]"],
+          ["CCBr", "KBr"],
+          ["[O-]"]
+        ]
+      ]
+    },
+    {
+      "index":4,
+      "mechanism": "bond",
+      "precursor_substrate_SMILES": "C1=CC=C2C(=C1)C(O)([O-])N(CC)C2=O",
+      "chemical_substrate_SMILES": "",
+      "starting_reagents":[
+        [
+          ["KOH:","[K+]","H2O"],
+          ["[K+]"],
+          ["CCBr", "KBr"],
+          ["[O-]"]
+        ]
+      ],
+      "end_reagents":[
+        [
+          ["KOH:","[K+]","H2O"],
+          ["[K+]"],
+          ["CCBr", "KBr"],
+          ["[O-]"],
+          []
+        ]
+      ]
+    },
+    {
+      "index":5,
+      "mechanism": "proton transfer",
+      "precursor_substrate_SMILES": "C1=CC=C2C(=C1)C(O)([O-])N(CC)C2=O",
+      "chemical_substrate_SMILES": "",
+      "starting_reagents":[
+        [
+          ["KOH:","[K+]","H2O"],
+          ["[K+]"],
+          ["CCBr", "KBr"],
+          ["[O-]"],
+          []
+        ]
+      ],
+      "end_reagents":[
+        [
+          ["KOH:","[K+]","H2O"],
+          ["[K+]"],
+          ["CCBr", "KBr"],
+          ["[O-]"],
+          [],
+          ["[O-]"]
+        ]
+      ]
+    },
+    {
+      "index":6,
+      "mechanism": "1,2 addition",
+      "precursor_substrate_SMILES": "",
+      "chemical_substrate_SMILES": "",
+      "starting_reagents":[
+        [
+          ["KOH:","[K+]","H2O"],
+          ["[K+]"],
+          ["CCBr", "KBr"],
+          ["[O-]"],
+          [],
+          ["[O-]"]
+        ]
+      ],
+      "end_reagents":[
+        [
+          ["KOH:","[K+]","H2O"],
+          ["[K+]"],
+          ["CCBr", "KBr"],
+          ["[O-]"],
+          [],
+          ["[O-]"],
+          []
+        ]
+      ]
+    },
+    {
+      "index":7,
+      "mechanism": "bond",
+      "precursor_substrate_SMILES": "",
+      "chemical_substrate_SMILES": "",
+      "starting_reagents":[
+        [
+          ["KOH:","[K+]","H2O"],
+          ["[K+]"],
+          ["CCBr", "KBr"],
+          ["[O-]"],
+          [],
+          ["[O-]"]
+        ]
+      ],
+      "end_reagents":[
+        [
+          ["KOH:","[K+]","H2O"],
+          ["[K+]"],
+          ["CCBr", "KBr"],
+          ["[O-]"],
+          [],
+          ["[O-]"],
+          [],
+          ["[N-]CC"]
+        ]
+      ]
+    },
+    {
+      "index":8,
+      "mechanism": "deprotonation",
+      "precursor_substrate_SMILES": "",
+      "chemical_substrate_SMILES": "",
+      "starting_reagents":[
+        [
+          ["KOH:","[K+]","H2O"],
+          ["[K+]"],
+          ["CCBr", "KBr"],
+          ["[O-]"],
+          [],
+          ["[O-]"],
+          [],
+          ["[N-]CC"]
+        ]
+      ],
+      "end_reagents":[
+        [
+          ["KOH:","[K+]","H2O"],
+          ["[K+]"],
+          ["CCBr", "KBr"],
+          ["[O-]"],
+          [],
+          ["[O-]"],
+          [],
+          ["[N-]CC"],
+          ["NCC"]
+        ]
+      ]
+    }
+  ]
+
+}

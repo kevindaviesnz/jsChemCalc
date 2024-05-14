@@ -1,0 +1,46 @@
+# Define a function to calculate the equilibrium constant (Keq) for an acid-base reaction
+FUNCTION EquilibriumConstant(acid: object, conjugate acid: object):
+
+    # Step 1: Look up the pKa values of the acid and conjugate acid.
+    # These values should be known or looked up from a reference source.
+
+    # Step 2: Subtract pKa of the conjugate acid from pKa of the acid
+    pKaDifference = conjugate acid pKa - acid pka
+
+    # Step 3: Calculate Keq from pKa difference using the antilogarithm formula
+    Keq = 10 raised to the power of (-pKaDifference)
+
+    return Keq
+
+END FUNCTION
+
+# Example usage:
+
+acid = acetic acid
+base = ammonia
+conjugate acid = conjugate acid of ammonia (ammonia is a base)
+equilibriumConstant = EquilibriumConstant(acid, conjugate acid)
+PRINT "The equilibrium constant (Keq) is " + equilibriumConstant formatted with 5 decimal places
+
+# products favoured
+GET RANDOM number BETWEEN 1 AND equilibrium constant
+IF pka of acid > pka of conjugate of acid AND pka of base > pKa of conjugate of base AND random number <> equilibrium constant
+    OR pka of acid < pka of conjugate of acid AND random number = equilibrium constant:
+         PRINT "Proceeding with reaction"
+END IF
+
+Organic Chemistry p181
+Following Steps 1 through 3, we have pKeq 5 4.76 2 9.24 5 24.48, so Keq 5 3.0 3 104. Because we know that
+acid-base reactions are favored when the stronger acid reacts with the stronger base to give the weaker acid
+and the weaker base, we can conclude that the equilibrium for the reaction between acetic acid and ammonia lies
+to the right. Using the mathematical approach just developed, we can calculate that the preference to the right
+is 3.0 3 104. This means that if we started with equal amounts of acetic acid and ammonia, the reaction
+would prefer the products 30,000 to 1.
+
+
+
+
+
+
+
+

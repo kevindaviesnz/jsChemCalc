@@ -1,0 +1,8 @@
+Fetching a resource should return either the resource or undefined.
+
+If a reaction fails or fails to happen then it should return false.
+
+When a reaction stops reason for it's stopping should be logged with a red background (console).
+
+Information for debugging should have a yellow background (console).
+

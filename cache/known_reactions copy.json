@@ -1,0 +1,861 @@
+[{
+  "_id": {
+    "$oid": "6237a20e5035f41c0cfea469"
+  },
+  "reaction": "acid base (electron pair share)",
+  "substrate": {
+    "name": "acetone",
+    "smiles": "CC(=O)C"
+  },
+  "reagents": [
+    [
+      {
+        "name": "methanamine",
+        "smiles": "CN(C)C"
+      }
+    ]
+  ],
+  "products": [
+    {
+      "name": "Acid base intermediate",
+      "smiles": "C[N+](C)(C)[C-](C)(=O)C"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "62479d221c6a6f1e8c5b1c00"
+  },
+  "reaction": "proton transfer",
+  "substrate": {
+    "name": "",
+    "smiles": "C[N+]C(C)(C)[O-]"
+  },
+  "reagents": [],
+  "products": [
+    {
+      "name": "methyl isopropanolamine",
+      "smiles": "CNC(O)(C)C"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "724a7cfe7716562eb918c4a9"
+  },
+  "reaction_name": "wittig reaction",
+  "starting_product": [
+    "aldehyde",
+    "ketone"
+  ],
+  "end product": "alkene",
+  "urls": [
+    "https://courses.lumenlearning.com/suny-potsdam-organicchemistry2/chapter/20-4-the-wittig-reaction/"
+  ],
+  "steps": [
+    {
+      "index": 0,
+      "mechanism": "lewis acid base",
+      "precursor_substrate_SMILES": "C(=O)C",
+      "chemical_substrate_SMILES": "CC(C)(C)[N+]#CC",
+      "starting_reagents": [
+        "[C-](CCC)[P+](C1=CC=CC=C1)(C2=CC=CC=C2)C3=CC=CC=C3"
+      ],
+      "end_reagents": [
+        [
+          "CC#N",
+          "CC#N"
+        ]
+      ],
+      "notes": [
+        [
+          "Bond negatively-charged carbon to substrate carbon atom. This should also break one of the C=O pi bonds, giving the oxygen atom a negative charge."
+        ]
+      ]
+    },
+    {
+      "index": 1,
+      "mechanism": "bond",
+      "precursor_substrate_SMILES": "C(CCC)[P+](C1=CC=CC=C1)(C2=CC=CC=C2)C3=CC=CC=C3",
+      "chemical_substrate_SMILES": "CC(C)(C)N=C([O+])C",
+      "starting_reagents": [
+        ""
+      ],
+      "end_reagents": [
+        [
+          "C-](CCC)[P+](C1=CC=CC=C1)(C2=CC=CC=C2)C3=CC=CC=C3"
+        ],
+        []
+      ],
+      "notes": [
+        [
+          "Bond negatively-charged oxygen to phosphorus atom."
+        ],
+        "Results in box intermediate."
+      ]
+    },
+    {
+      "index": 2,
+      "mechanism": "break bond",
+      "precursor_substrate_SMILES": "C(CCC)[P+](C1=CC=CC=C1)(C2=CC=CC=C2)C3=CC=CC=C3",
+      "chemical_substrate_SMILES": "CC(C)(C)N=C(O)C",
+      "starting_reagents": [],
+      "end_reagents": [
+        [
+          "C-](CCC)[P+](C1=CC=CC=C1)(C2=CC=CC=C2)C3=CC=CC=C3"
+        ],
+        [
+          "C-](CCC)[P+](C1=CC=CC=C1)(C2=CC=CC=C2)C3=CC=CC=C3"
+        ],
+        [
+          "[H+]"
+        ]
+      ],
+      "notes": [
+        [
+          "Break bond between oxygen and carbonyl carbon"
+        ]
+      ]
+    },
+    {
+      "index": 3,
+      "mechanism": "break bond",
+      "precursor_substrate_SMILES": "CC(C)(C)N=C(O)C",
+      "chemical_substrate_SMILES": "CC(C)(C)[N+]=C(O)C",
+      "starting_reagents": [],
+      "end_reagents": [
+        [
+          "CC#N"
+        ],
+        [
+          "O"
+        ],
+        [],
+        []
+      ],
+      "notes": [
+        [
+          "Break bond between phosphorus atom and former negatively-charged carbon.",
+          "This should create a new reagent Ph3P=O",
+          "Reverse 2 + 2 cycloadditon"
+        ]
+      ]
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "625114104b331132b822168f"
+  },
+  "reaction": "leaving group removal",
+  "substrate": {
+    "name": "methyloxonium",
+    "smiles": "C[O+]"
+  },
+  "reagents": [],
+  "products": [
+    {
+      "name": "methyl cation",
+      "smiles": "[C+]"
+    },
+    {
+      "name": "water",
+      "smiles": "O"
+    }
+  ],
+  "urls": []
+},{
+  "_id": {
+    "$oid": "624918965f93b02b358b6a54"
+  },
+  "reaction": "carbocation rearrangement (hydride shift)",
+  "substrate": {
+    "name": " isobutyl cation",
+    "smiles": "CC(C)[C+]"
+  },
+  "reagents": [],
+  "products": [
+    {
+      "name": "2-methylpropane",
+      "smiles": "C[C+](C)C"
+    }
+  ],
+  "urls": [
+    "https://www.masterorganicchemistry.com/2012/08/15/rearrangement-reactions-1-hydride-shifts/",
+    "https://www.masterorganicchemistry.com/2012/08/22/rearrangement-reactions-2-alkyl-shifts/"
+  ]
+},{
+  "_id": {
+    "$oid": "624926dbf5d7cc3020505f39"
+  },
+  "reaction_name": "pinacol rearrangement",
+  "steps": [
+    {
+      "index": 0,
+      "mechanism": "protonation",
+      "precursor_substrate_SMILES": "CC(O)(C)C(O)(C)C",
+      "chemical_substrate_SMILES": "CC(O)(C)C([O+])(C)C",
+      "starting_reagents": [
+        "A:"
+      ],
+      "end_reagents": [
+        [
+          "A:",
+          "CB:"
+        ]
+      ]
+    },
+    {
+      "index": 1,
+      "mechanism": "leaving group removal",
+      "precursor_substrate_SMILES": "CC(O)(C)C([O+])(C)C",
+      "chemical_substrate_SMILES": "CC(O)(C)[C+](C)C",
+      "starting_reagents": [],
+      "end_reagents": [
+        [
+          [
+            "A:",
+            "CB:"
+          ]
+        ],
+        [
+          "O"
+        ]
+      ]
+    },
+    {
+      "index": 2,
+      "mechanism": "alkyl shift",
+      "precursor_substrate_SMILES": "CC(O)(C)[C+](C)C",
+      "chemical_substrate_SMILES": "CC([C+](O)C)(C)C",
+      "starting_reagents": [],
+      "end_reagents": [
+        [
+          [
+            "CB:"
+          ]
+        ],
+        [
+          [
+            "O"
+          ]
+        ],
+        []
+      ]
+    },
+    {
+      "index": 3,
+      "mechanism": "bond",
+      "precursor_substrate_SMILES": "CC([C+](O)C)(C)C",
+      "chemical_substrate_SMILES": "CC(C(=[O+])C)(C)C",
+      "starting_reagents": [],
+      "end_reagents": [
+        [
+          [
+            "CB:"
+          ]
+        ],
+        [
+          [
+            "O"
+          ]
+        ],
+        [],
+        []
+      ]
+    },
+    {
+      "index": 4,
+      "mechanism": "deprotonation",
+      "precursor_substrate_SMILES": "CC(C(=[O+])C)(C)C",
+      "chemical_substrate_SMILES": "CC(C(=O)C)(C)C",
+      "starting_reagents": [],
+      "end_reagents": [
+        [
+          [
+            "CB:"
+          ]
+        ],
+        [
+          [
+            "O"
+          ]
+        ],
+        [],
+        [],
+        [
+          "[O+]"
+        ]
+      ]
+    }
+  ],
+  "urls": [
+    "https://en.wikipedia.org/wiki/Pinacol_rearrangement"
+  ]
+},{
+  "_id": {
+    "$oid": "62c8f5a768151f2ddf8a2e8c"
+  },
+  "reaction_name": "gabriel synthesis",
+  "urls": [
+    "https://www.masterorganicchemistry.com/2018/01/31/the-gabriel-synthesis/",
+    "https://byjus.com/chemistry/gabriel-phthalimide-synthesis-mechanism/",
+    "https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Supplemental_Modules_(Organic_Chemistry)/Amines/Synthesis_of_Amines/Gabriel_Synthesis",
+    "https://www.organic-chemistry.org/namedreactions/gabriel-synthesis.shtm"
+  ],
+  "steps": [
+    {
+      "index": 0,
+      "mechanism": "deprotonation",
+      "precursor_substrate_SMILES": "C1=CC=C2C(=C1)C(=O)NC2=O",
+      "chemical_substrate_SMILES": "O=C([N-]2)C1=CC=CC=C1C2=O",
+      "starting_reagents": [
+        "[K+][O-]"
+      ],
+      "end_reagents": [
+        [
+          "[K+][O-]",
+          "[K]",
+          "O"
+        ]
+      ]
+    },
+    {
+      "index": 1,
+      "mechanism": "lewis acid base",
+      "precursor_substrate_SMILES": "O=C([N-]2)C1=CC=CC=C1C2=O",
+      "chemical_substrate_SMILES": "O=C([N-]2[K+])C1=CC=CC=C1C2=O",
+      "starting_reagents": [],
+      "end_reagents": [
+        [
+          "[K+][O-]",
+          "[K]",
+          "O"
+        ],
+        [
+          "[K+]"
+        ]
+      ]
+    },
+    {
+      "index": 2,
+      "mechanism": "SN2",
+      "precursor_substrate_SMILES": "O=C([N-]2[K+])C1=CC=CC=C1C2=O",
+      "chemical_substrate_SMILES": "O=C2C1=CC=CC=C1C(=O)N([K+])2CC",
+      "starting_reagents": [
+        "CCBr"
+      ],
+      "end_reagents": [
+        [],
+        [
+          "Br"
+        ],
+        [
+          "CC",
+          "Br",
+          "Br"
+        ]
+      ],
+      "reagents_filter": "*"
+    },
+    {
+      "index": 3,
+      "mechanism": "lewis acid base",
+      "precursor_substrate_SMILES": "O=C2C1=CC=CC=C1C(=O)N([K+])2CC",
+      "chemical_substrate_SMILES": "O=C2C1=CC=CC=C1C(=O)N2CC",
+      "starting_reagents": [],
+      "end_reagents": [
+        [],
+        [
+          "Br"
+        ],
+        [
+          "CC",
+          "Br"
+        ],
+        [
+          "[Br-][K+]",
+          "[Br-][K+]"
+        ]
+      ]
+    },
+    {
+      "index": 4,
+      "mechanism": "lewis acid base",
+      "precursor_substrate_SMILES": "O=C2C1=CC=CC=C1C(=O)N2CC",
+      "chemical_substrate_SMILES": "O=C2C1=CC=CC=C1C(O)([O-])N2CC",
+      "end_reagents": [
+        [],
+        [],
+        [],
+        [],
+        [
+          "[O-]",
+          "[O-]"
+        ]
+      ],
+      "starting_reagents": [
+        "[O-]"
+      ],
+      "reagents_filter": "*"
+    },
+    {
+      "index": 5,
+      "mechanism": "bond",
+      "precursor_substrate_SMILES": "O=C2C1=CC=CC=C1C(O)([O-])N2CC",
+      "chemical_substrate_SMILES": "CC[N-]C(=O)C1=CC=CC=C1C(O)=O",
+      "starting_reagents": [],
+      "end_reagents": [
+        [],
+        [],
+        [],
+        [],
+        [
+          "[O-[",
+          "[O-]"
+        ],
+        []
+      ]
+    },
+    {
+      "index": 6,
+      "mechanism": "proton transfer",
+      "precursor_substrate_SMILES": "CC[N-]C(=O)C1=CC=CC=C1C(O)=O",
+      "chemical_substrate_SMILES": "CCNC(=O)C1=CC=CC=C1C([O-])=O",
+      "starting_reagents": [],
+      "end_reagents": [
+        [],
+        [
+          "Br"
+        ],
+        [
+          "CC",
+          "Br"
+        ],
+        [
+          "Br",
+          "[Br-][K+]"
+        ],
+        [],
+        [
+          "[O-]"
+        ],
+        []
+      ]
+    },
+    {
+      "index": 7,
+      "mechanism": "lewis acid base",
+      "precursor_substrate_SMILES": "CCNC(=O)C1=CC=CC=C1C([O-])=O",
+      "chemical_substrate_SMILES": "CCNC(O)([O-])C1=CC=CC=C1C([O-])=O",
+      "starting_reagents": [
+        "[O-]"
+      ],
+      "end_reagents": [
+        [],
+        [],
+        [],
+        [],
+        [
+          "[O-]",
+          "[O-]"
+        ],
+        [],
+        [],
+        [
+          "[O-]",
+          "[O-]"
+        ]
+      ]
+    },
+    {
+      "index": 8,
+      "mechanism": "bond",
+      "precursor_substrate_SMILES": "CCNC(O)([O-])C1=CC=CC=C1C([O-])=O",
+      "chemical_substrate_SMILES": "O=C(O)C1=CC=CC=C1C([O-])=O",
+      "starting_reagents": [],
+      "end_reagents": [
+        [],
+        [],
+        [],
+        [],
+        [
+          "[O-]",
+          "[O-]"
+        ],
+        [],
+        [],
+        [
+          "[O-]",
+          "[O-]"
+        ],
+        [
+          "[N-]CC"
+        ]
+      ]
+    },
+    {
+      "index": "9",
+      "mechanism": "deprotonation",
+      "chemical_substrate_SMILES": "O=C([O-])C1=CC=CC=C1C([O-])=O",
+      "starting_reagents": [
+        "[N-]CC"
+      ],
+      "end_reagents": [
+        [],
+        [
+          "Br"
+        ],
+        [
+          "CC",
+          "Br"
+        ],
+        [
+          "Br",
+          "[Br-][K+]"
+        ],
+        [],
+        [
+          "[O-]"
+        ],
+        [],
+        [],
+        [
+          "[N-]CC"
+        ],
+        [
+          "[N-]CC",
+          "NCC"
+        ]
+      ],
+      "precursor_substrate_SMILES": "O=C(O)C1=CC=CC=C1C([O-])=O",
+      "reagents_filter": "*"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "624a7cfe7716562eb918c4a9"
+  },
+  "reaction_name": "ritter reaction",
+  "urls": [
+    "https://www.organic-chemistry.org/namedreactions/ritter-reaction.shtm",
+    "https://pubchem.ncbi.nlm.nih.gov/compound/86586183",
+    "https://en.wikipedia.org/wiki/Ritter_reaction"
+  ],
+  "steps": [
+    {
+      "index": 0,
+      "mechanism": "lewis acid base",
+      "precursor_substrate_SMILES": "C[C+](C)C",
+      "chemical_substrate_SMILES": "CC(C)(C)[N+]#CC",
+      "starting_reagents": [
+        "CC#N"
+      ],
+      "end_reagents": [
+        [
+          "CC#N",
+          "CC#N"
+        ]
+      ]
+    },
+    {
+      "index": 1,
+      "mechanism": "hydrate",
+      "precursor_substrate_SMILES": "CC(C)(C)[N+]#CC",
+      "chemical_substrate_SMILES": "CC(C)(C)N=C(C)[O+]",
+      "starting_reagents": [
+        "O"
+      ],
+      "end_reagents": [
+        [
+          "CC#N"
+        ],
+        [
+          "O"
+        ]
+      ]
+    },
+    {
+      "index": 2,
+      "mechanism": "deprotonation",
+      "precursor_substrate_SMILES": "CC(C)(C)N=C(C)[O+]",
+      "chemical_substrate_SMILES": "CC(C)(C)N=C(C)O",
+      "starting_reagents": [],
+      "end_reagents": [
+        [
+          "CC#N"
+        ],
+        [
+          "O"
+        ],
+        [
+          "[H+]"
+        ]
+      ]
+    },
+    {
+      "index": 3,
+      "mechanism": "protonation",
+      "precursor_substrate_SMILES": "CC(C)(C)N=C(C)O",
+      "chemical_substrate_SMILES": "CC(C)(C)[N+]=C(C)O",
+      "starting_reagents": [],
+      "end_reagents": [
+        [
+          "CC#N"
+        ],
+        [
+          "O"
+        ],
+        [],
+        []
+      ]
+    },
+    {
+      "index": 4,
+      "mechanism": "bond",
+      "precursor_substrate_SMILES": "CC(C)(C)[N+]=C(C)O",
+      "chemical_substrate_SMILES": "CC(C)(C)NC(C)=[O+]",
+      "end_reagents": [
+        [
+          "CC#N"
+        ],
+        [
+          "O"
+        ],
+        [],
+        [],
+        [],
+        []
+      ],
+      "starting_reagents": []
+    },
+    {
+      "index": 5,
+      "precursor_substrate_SMILES": "CC(C)(C)NC(C)=[O+]",
+      "chemical_substrate_SMILES": "CC(C)(C)NC(C)=O",
+      "end_reagents": [
+        [
+          "CC#N"
+        ],
+        [
+          "O"
+        ],
+        [],
+        [],
+        [],
+        [
+          "CC#[N+]"
+        ]
+      ],
+      "starting_reagents": [],
+      "mechanism": "deprotonation"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "62366f6d98f7c423842ef82d"
+  },
+  "reaction": "acid base (proton)",
+  "substrate": {
+    "name": "sulphuric acid",
+    "smiles": "OS(=O)(=O)O"
+  },
+  "reagents": [
+    [
+      {
+        "name": "water",
+        "smiles": "O"
+      }
+    ]
+  ],
+  "products": [
+    {
+      "name": "hydrogen sulfate",
+      "smiles": "OS([O-])(=O)=O"
+    },
+    {
+      "name": "hydronium",
+      "smiles": "[O+]"
+    }
+  ],
+  "urls": [
+    "https://www.thoughtco.com/add-sulfuric-acid-to-water-606099"
+  ]
+},{
+  "_id": {
+    "$oid": "624bd5904ba59315908d52c5"
+  },
+  "reaction": "carbocation rearrangement (akyl shift)",
+  "substrate": {
+    "name": "2,2-dimethylbutane",
+    "smiles": "CC(C)(C)[C+]C"
+  },
+  "reagents": [],
+  "products": [
+    {
+      "name": "2,3-Dimethylbutane-2-ylium",
+      "smiles": "CC(C)[C+](C)C"
+    }
+  ],
+  "urls": [
+    "https://www.masterorganicchemistry.com/2012/08/15/rearrangement-reactions-1-hydride-shifts/",
+    "https://www.masterorganicchemistry.com/2012/08/22/rearrangement-reactions-2-alkyl-shifts/"
+  ]
+},{
+  "_id": {
+    "$oid": "62e9f92eae26ee213002bd4d"
+  },
+  "reaction_name": "reductive amination",
+  "urls": [
+    "https://www.masterorganicchemistry.com/2017/09/01/reductive-amination/"
+  ],
+  "steps": [
+    {
+      "index": 0,
+      "description": "Protonate carbonyl oxygen using sulphuric acid",
+      "mechanism": "bronsted lowery acid base",
+      "precursor_substrate_SMILES": "C=O",
+      "chemical_substrate_SMILES": "C=[O+]",
+      "starting_reagents": [
+        "OS(=O)(=O)O"
+      ],
+      "end_reagents": [
+        [
+          "O[S](=O)(=O)[O-]"
+        ]
+      ]
+    },
+    {
+      "index": 1,
+      "description": "Bond nitrogen to carbon, breaking C=O bond.",
+      "mechanism": "lewis acid base",
+      "precursor_substrate_SMILES": "C=[O+]",
+      "chemical_substrate_SMILES": "C(O)[N+]CCC",
+      "starting_reagents": [
+        "NCCC"
+      ],
+      "end_reagents": [
+        [],
+        [
+          "NCCC"
+        ]
+      ],
+      "reagents_filter": "*"
+    },
+    {
+      "index": 3,
+      "description": "Deprotonate nitrogen atom. Nitrogen atom should now have one hydrogen and have neutral charge.",
+      "mechanism": "bronsted lowery acid base",
+      "precursor_substrate_SMILES": "C(O)[N+]CCC",
+      "chemical_substrate_SMILES": "C(O)NCCC",
+      "starting_reagents": ["O"],
+      "end_reagents": ["O", "[O+]"]
+    },
+    {
+      "index": 4,
+      "description": "Protonate carbonyl oxygen to form O leaving group.",
+      "mechanism": "bronsted lowery acid base",
+      "precursor_substrate_SMILES": "C(O)[N+]CCC",
+      "chemical_substrate_SMILES": "C([N+]CCC)",
+      "starting_reagents": ["O", "[O+]"],
+      "end_reagents": [
+        [],
+        [
+          "NCC1=CC=CC=C1",
+          "NCC1=CC=CC=C1"
+        ],
+        []
+      ]
+    },
+
+    {
+      "index": 3,
+      "mechanism": "bond",
+      "description": "Create C=N double bond",
+      "precursor_substrate_SMILES": "C(NCCC)",
+      "chemical_substrate_SMILES": "C(=[N+]CCC)",
+      "starting_reagents": [],
+      "end_reagents": [
+        [],
+        [
+          "NCC1=CC=CC=C1",
+          "NCC1=CC=CC=C1"
+        ],
+        [],
+        [
+          "O"
+        ]
+      ]
+    },
+    {
+      "index": 3,
+      "mechanism": "bronsted lowery acid base",
+      "description": "Deprotonate nitrogen atom. Nitrogen atom should now have no hydrogens and have neutral charge.",
+      "precursor_substrate_SMILES": "C(NCCC)",
+      "chemical_substrate_SMILES": "C(=[N+]CCC)",
+      "starting_reagents": [],
+      "end_reagents": [
+        [],
+        [
+          "NCC1=CC=CC=C1",
+          "NCC1=CC=CC=C1"
+        ],
+        [],
+        [
+          "O"
+        ]
+      ]
+    },
+    {
+      "index": 4,
+      "mechanism": "reduction",
+      "precursor_substrate_SMILES": "C(=[N+]CCC)",
+      "chemical_substrate_SMILES": "CNCCC",
+      "end_reagents": [
+        [],
+        [
+          "NCC1=CC=CC=C1"
+        ],
+        [],
+        [
+          "O"
+        ],
+        [
+          "RA:"
+        ]
+      ],
+      "starting_reagents": [
+        "RA:"
+      ]
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "624a7bdd7716562eb918c4a8"
+  },
+  "reaction": "wittig reaction",
+  "substrate": {
+    "name": " acetone",
+    "smiles": "CC(=O)C"
+  },
+  "reagents": [
+    [
+      {
+        "name": "triphenyl phosphine",
+        "smiles": "C1=CC=C(C=C1)P(C2=CC=CC=C2)C3=CC=CC=C3"
+      }
+    ]
+  ],
+  "products": [
+    {
+      "name": "isobutylene",
+      "smiles": "C(=C)C"
+    },
+    {
+      "name": "triphenylphosphine oxide",
+      "smiles": "O=P(C1=CC=C(C=C1))(C2=CC=CC=C2)C3=CC=CC=C3"
+    }
+  ],
+  "urls": [
+    "https://www.masterorganicchemistry.com/2018/02/06/wittig-reaction/",
+    "https://pubchem.ncbi.nlm.nih.gov/compound/86586183",
+    "https://courses.lumenlearning.com/suny-potsdam-organicchemistry2/chapter/20-4-the-wittig-reaction/"
+  ]
+}]

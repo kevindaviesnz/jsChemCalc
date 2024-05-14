@@ -1,0 +1,35 @@
+FUNCTION Deprotonate(reactant: object, substrate: object, logger: object)
+
+# Ensure that this function only returns true or false without modifying the parameters.
+
+IF substrate and reactant are the same OR substrate has a greater pka than reactant OR (reactant is hydronium AND substrate is oxygen)
+   RETURN false
+END IF
+
+IF substrate is water
+    REMOVE any atoms from reactant that are positively charged nitrogens
+ENDIF
+
+# Insert more conditions here if needed
+
+# Get the substrate atom to be protonated and the reactant atom to be deprotonated
+substrate_atom = GET substrate atom to be deprotonated
+reactant_atom = GET reactant atom to be protonated
+
+# Check if the required atoms are found
+IF substrate_atom not found OR reactant_atom not found
+    RETURN false
+END IF
+
+# Check additional conditions if necessary
+IF substrate is water
+    IF reactant_atom is oxygen OR (reactant_atom is nitrogen AND reactant_atom has a double bond to carbon)
+       RETURN false
+    END IF
+END IF
+
+
+RETURN true
+
+
+

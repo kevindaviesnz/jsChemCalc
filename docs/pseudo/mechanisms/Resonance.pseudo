@@ -1,0 +1,30 @@
+
+FUNCTION Resonance (container:object, molecule: object, location atom: object, logger:object)
+
+   SET resonance structures as array
+   ADD molecule to resonance structures
+
+   IF location atom has positive charge
+
+      IF location atom has double bond to carbon
+         BREAK double bond
+         ADD molecule to resonance restructures
+         STABILISE
+         IF STABILISED
+            ADD molecule to resonance structures
+         END IF
+      END IF
+
+      IF carbon single bonded to location atom HAS double bond
+         BREAK double bond
+         ADD molecule to resonance structures
+      END IF
+
+   END IF
+
+   RETURN resonance structures
+
+END FUNCTION
+
+
+

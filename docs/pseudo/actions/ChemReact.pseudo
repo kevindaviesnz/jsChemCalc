@@ -1,0 +1,132 @@
+// REFACTORED
+FUNCTION TryReaction(reactant, substrate):
+    IF reactant1 is the same as reactant2 OR /* Check for equilibrium condition */:
+        RETURN false
+    END IF
+    // Check if reactants can react based on your conditions
+    // Example: IF reactant1.type = 'A' AND reactant2.type = 'B':
+    //     RETURN true
+    // END IF
+    RETURN false
+
+FUNCTION getAllPossibleReactions(container):
+    RETURN container.reduce((reactions, reactant, index) => {
+        const restOfContainer = container.slice(index + 1);
+        const possibleReactions = restOfContainer.filter(reactant2 => TryReaction(reactant, substrate));
+        return reactions.concat(possibleReactions.map(reactant2 => [reactant1, reactant2]));
+    }, [])
+
+// Example usage:
+container = [A1, A2, A3, B1, B2, C1] // Initial reactants
+Keq = 30000 // Equilibrium constant
+possibleReactions = getAllPossibleReactions(container)
+IF possibleReactions.length > 0:
+    // Sort possibleReactions based on reactivity (your criteria)
+    // Get the most likely reaction
+    reaction = possibleReactions[0]
+    // Perform the reaction and update the container
+    // Add more possible reactions to possibleReactions if needed
+    // Recursive call to ChemReact(container) if more reactions are possible
+END IF
+
+
+Example
+Start with reactants [A1,A2,A3,B1,B2,C1] (A1, A2 etc are of the same reactant type. Number is just for reference).
+A will react with B to give the products A+, B-
+C will not react with either A or B.
+B- will react with A+ to give the products A,B but not if the reactants and products are at equilibrium.
+B- will react with C to give the products B, C+
+C+ will not react with B.
+A is the most reactive reactant.
+1. Possible reactions: [A1,B1], [A1,B2], [A2,B1], [A2,B2],[A3,B1],[A3, B2]
+2. A1 reacts with B1 so we now have the reactants:
+[A1+, B1-, A2, A3, B2, C1]
+3. Possible reactions: [A1+, B1-], [A2, B2], [A3, B2], [B2, A2], [B2,A3], [B1-, C1]
+4. A2 reacts with B2 so we now the reactants:
+[A1+, B1-, A2+, B2-, A3, C1]
+5. Possible reactions:
+[A1+, B1-], [A1+, B2-], [B1-, A1+], [B1-, A2+], [B2-, A1+], [B2-, A2+], [B1-, C1], [B2-, C1], [C1, B2-]
+6. A1+ reacts with B2- so we not have the reactants:
+[A1,B1, A2+, B2-, A3, C1]
+At this point A1/B2 <--> A2+/B2- have reached equilibrium
+7. Possble reactions
+[B2-, C1], [C1, B2-]
+8. B2- reacts with C1 so we now have the reactants:
+[A1, B1, A2+, A3, B2, C+]
+9. No more reactions.
+
+------------------------------------------------------------------------------------------------------------------
+# A container is a object with "reactants" property which is an array of reactants.
+FUNCTION ChemReact (container: object) : return container
+
+    possible reactions = CALL getAllPossibleReactions()
+
+    IF no reactions
+       END
+    ELSE
+       GET reaction that would have most likely happened based on the reactivity of the reactants.
+       # this will change the reactants in the container
+       DO reaction
+       # this should add more possible reactions to the "possible reactions" array.
+       CALL ChemReact(container)
+    END IF
+
+END FUNCTION
+
+FUNCTION getAllPossibleReactions(container: object) : return array
+
+   SET reaction index to 0
+   SET substrate index to 0
+   DO
+       reactant = GET reactant FROM container at reaction index
+       DO
+           substrate = GET reactant FROM container at substrate index
+           IF possible reaction BETWEEN reactant and substrate
+               ADD reaction to array of possible reactions
+           END
+           RESET container
+           INCREMENT substrate index
+       UNTIL substrate index = number of reactants in container
+       REST container
+
+   UNTIL reaction index = number of reactants in container
+
+   RESET container
+
+   INCREMENT reaction index
+
+   RETURN array of all possible reactions
+
+END FUNCTION
+
+FUNCTION canReactWith (reactant: object, substrate: object) : return boolean
+    IF reactant and substrate are the same RETURN false
+    IF product and reactants are at equilibrium RETURN false
+    IF react reacts with substrate RETURN true OTHERWISE RETURN false
+END FUNCTION
+
+Example
+Start with reactants [A1,A2,A3,B1,B2,C1] (A1, A2 etc are of the same reactant type. Number is just for reference).
+A will react with B to give the products A+, B-
+C will not react with either A or B.
+B- will react with A+ to give the products A,B but not if the reactants and products are at equilibrium.
+B- will react with C to give the products B, C+
+C+ will not react with B.
+A is the most reactive reactant.
+1. Possible reactions: [A1,B1], [A1,B2], [A2,B1], [A2,B2],[A3,B1],[A3, B2]
+2. A1 reacts with B1 so we now have the reactants:
+[A1+, B1-, A2, A3, B2, C1]
+3. Possible reactions: [A1+, B1-], [A2, B2], [A3, B2], [B2, A2], [B2,A3], [B1-, C1]
+4. A2 reacts with B2 so we now the reactants:
+[A1+, B1-, A2+, B2-, A3, C1]
+5. Possible reactions:
+[A1+, B1-], [A1+, B2-], [B1-, A1+], [B1-, A2+], [B2-, A1+], [B2-, A2+], [B1-, C1], [B2-, C1], [C1, B2-]
+6. A1+ reacts with B2- so we not have the reactants:
+[A1,B1, A2+, B2-, A3, C1]
+At this point A1/B2 <--> A2+/B2- have reached equilibrium
+7. Possble reactions
+[B2-, C1], [C1, B2-]
+8. B2- reacts with C1 so we now have the reactants:
+[A1, B1, A2+, A3, B2, C+]
+9. No more reactions.
+
